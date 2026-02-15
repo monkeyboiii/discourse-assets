@@ -1,0 +1,12 @@
+icons/
+DiscourseIcons.xcassets/
+
+emojis/
+DiscourseEmojis.xcassets/
+
+.venv/
+.vscode/
+.idea/
+.DS_Store
+*.pyc
+__pycache__/
