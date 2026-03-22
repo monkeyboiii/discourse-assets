@@ -13,13 +13,13 @@ uv run --with cairosvg \
         -i assets/sprite-dbc.xml \
         -o assets/icons/ \
         --pdf \
-        --xcassets DiscourseIcon.xcassets \
+        --xcassets assets/icons/DiscourseIcons.xcassets \
         --swift DiscourseIcon.swift \
         --enum-name DiscourseIcon
 
 
 # overwrite icons in Xcode project
-cp -r DiscourseIcons.xcassets/ ../../App/DiscourseIcons.xcassets/
+cp -r assets/icons/DiscourseIcons.xcassets/ ../../App/DiscourseIcons.xcassets/
 
 
 # watch for duplicate icons
