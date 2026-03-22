@@ -5,8 +5,8 @@
 Bundle Discourse emoji images into an Xcode Asset Catalog so you can render
 emojis locally by *name* (shortcode) without fetching from the network.
 
-Input: an HTML file that contains Discourse emoji <img class="emoji" ...> tags,
-e.g. <img src=".../images/emoji/twitter/smiley.png?v=14" title=":smiley:" ...>
+Input: emojis.json from Discourse's /emojis.json endpoint.
+  Structure: { "group_name": [{ "name", "url", "tonable", "group", "search_aliases" }, ...], ... }
 
 Output:
   <out>/Emoji.xcassets/
@@ -16,15 +16,15 @@ Output:
       emoji_smiley.png
 
 Asset naming rule (deterministic, no mapping file needed):
-  shortcode ":smiley:" -> asset name "emoji_smiley"
+  shortcode "smiley" -> asset name "emoji_smiley"
   runtime usage: Image("emoji_smiley")
 
 Example:
-  python3 bundle_discourse_emojis.py \
-    --html ./emoji.html \
-    --out ./GeneratedEmoji \
+  python3 discourse_emojis.py \
+    --json ./assets/emojis.json \
+    --out ./assets/emojis \
     --base-url https://forum.dirtbikechina.com \
-    --download
+    --download --incremental
 """
 
 from __future__ import annotations
@@ -35,52 +35,9 @@ import os
 import re
 import shutil
 import sys
-from html.parser import HTMLParser
 from pathlib import Path
-from typing import Optional
 from urllib.parse import quote, urljoin, urlparse, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
-
-
-class DiscourseEmojiHTMLParser(HTMLParser):
-    """
-    Extract emoji <img> tags in document order.
-    We accept <img> where:
-      - class contains "emoji"
-      - title or alt looks like :shortcode:
-      - src (or data-src) is present
-    """
-
-    def __init__(self) -> None:
-        super().__init__(convert_charrefs=True)
-        self.items: list[dict[str, str]] = []
-
-    def handle_starttag(self, tag: str, attrs: list[tuple[str, Optional[str]]]) -> None:
-        if tag.lower() != "img":
-            return
-
-        d = {k.lower(): (v or "") for k, v in attrs}
-        cls = d.get("class", "")
-
-        # Discourse typically uses class="emoji"
-        if "emoji" not in cls:
-            return
-
-        title = d.get("title", "").strip()
-        alt = d.get("alt", "").strip()
-        shortcode = title or alt
-        if not (shortcode.startswith(":") and shortcode.endswith(":") and len(shortcode) > 2):
-            return
-
-        src = d.get("src", "").strip() or d.get("data-src", "").strip()
-        if not src:
-            return
-
-        self.items.append({"shortcode_with_colons": shortcode, "src": src})
-
-
-def _read_text(path: Path) -> str:
-    return path.read_text(encoding="utf-8", errors="replace")
 
 
 def _write_json(path: Path, obj: object) -> None:
@@ -128,7 +85,6 @@ def _ext_from_url(url: str, default: str = ".png") -> str:
     path = urlparse(url).path
     _, ext = os.path.splitext(path)
     ext = (ext or default).lower()
-    # Xcode imagesets are happiest with png/jpg/jpeg/pdf; keep others only if explicitly allowed
     return ext
 
 
@@ -140,10 +96,10 @@ def _download(url: str, dst: Path) -> None:
     except UnicodeError:
         pass
 
-    path = quote(path, safe='/') 
+    path = quote(path, safe='/')
     query = quote(query, safe='=&?')
     fragment = quote(fragment, safe='')
-    
+
     url = urlunsplit((scheme, netloc, path, query, fragment))
     dst.parent.mkdir(parents=True, exist_ok=True)
     req = Request(url, headers={"User-Agent": "Mozilla/5.0 (emoji-bundler)"})
@@ -151,8 +107,8 @@ def _download(url: str, dst: Path) -> None:
         dst.write_bytes(resp.read())
 
 
-def _create_xcassets_root(xcassets: Path) -> None:
-    if xcassets.exists():
+def _create_xcassets_root(xcassets: Path, incremental: bool = False) -> None:
+    if xcassets.exists() and not incremental:
         shutil.rmtree(xcassets)
     xcassets.mkdir(parents=True, exist_ok=True)
     _write_json(xcassets / "Contents.json", {"info": {"author": "xcode", "version": 1}})
@@ -162,8 +118,6 @@ def _create_imageset(xcassets: Path, asset_name: str, filename: str) -> Path:
     imageset = xcassets / f"{asset_name}.imageset"
     imageset.mkdir(parents=True, exist_ok=True)
 
-    # We store the downloaded file as "1x". In practice most Discourse emoji PNGs are >20px
-    # and will downscale fine on retina. You can add 2x/3x later if you want.
     contents = {
         "images": [
             {"idiom": "universal", "filename": filename, "scale": "1x"},
@@ -197,9 +151,23 @@ def write_swift_enum(asset_names: list[str], swift_path: Path, enum_name: str = 
     swift_path.write_text("\n".join(lines), encoding="utf-8")
 
 
+def _load_emoji_json(json_path: Path) -> list[dict[str, str]]:
+    """Load emojis.json and return a flat list of {shortcode_with_colons, src}."""
+    with open(json_path, encoding="utf-8") as f:
+        emoji_data = json.load(f)
+
+    items: list[dict[str, str]] = []
+    for group_entries in emoji_data.values():
+        for entry in group_entries:
+            name = entry["name"]
+            url = entry["url"]
+            items.append({"shortcode_with_colons": f":{name}:", "src": url})
+    return items
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--html", required=True, type=Path, help="Path to the Discourse emoji HTML file")
+    ap.add_argument("--json", required=True, type=Path, help="Path to emojis.json (from Discourse /emojis.json endpoint)")
     ap.add_argument("--out", required=True, type=Path, help="Output directory (will be created)")
     ap.add_argument("--base-url", default="", help="Base URL to resolve relative src (e.g. https://forum.dirtbikechina.com)")
     ap.add_argument("--download", action="store_true", help="Download images into the asset catalog")
@@ -210,21 +178,20 @@ def main() -> int:
                     help="Emit a small report JSON (shortcode -> assetName, url) for debugging")
     ap.add_argument("--swift", default="", help="If set, path to generate a Swift enum file (e.g. Sources/Emojis.swift)")
     ap.add_argument("--enum-name", default="EmojiAsset", help="Swift enum name when using --swift")
+    ap.add_argument("--incremental", action="store_true",
+                    help="Incremental mode: keep existing assets, only download missing/new emojis")
     args = ap.parse_args()
 
-    html_text = _read_text(args.html)
-    parser = DiscourseEmojiHTMLParser()
-    parser.feed(html_text)
-    items = parser.items
+    items = _load_emoji_json(args.json)
 
     if not items:
-        print("[ERR] No emoji <img> tags found (class must contain 'emoji' and title/alt like :name:).", file=sys.stderr)
+        print("[ERR] No emoji entries found in JSON.", file=sys.stderr)
         return 2
 
     out_dir: Path = args.out
     out_dir.mkdir(parents=True, exist_ok=True)
-    xcassets = out_dir / "DiscourseEmoji.xcassets"
-    _create_xcassets_root(xcassets)
+    xcassets = out_dir / "DiscourseEmojis.xcassets"
+    _create_xcassets_root(xcassets, incremental=args.incremental)
 
     base_url = args.base_url.strip()
 
@@ -235,6 +202,7 @@ def main() -> int:
     report: list[dict[str, str]] = []
     downloaded = 0
     skipped = 0
+    kept = 0
 
     for it in items:
         sc_with = it["shortcode_with_colons"]   # ":smiley:"
@@ -281,18 +249,22 @@ def main() -> int:
 
         filename = f"{asset_name}{ext}"  # deterministic and collision-free
         imageset = _create_imageset(xcassets, asset_name, filename)
+        image_path = imageset / filename
 
         if args.download:
-            try:
-                _download(url, imageset / filename)
-                downloaded += 1
-            except Exception as ex:
-                print(f"[WARN] Download failed for {sc_with} from {url}: {ex}", file=sys.stderr)
-                skipped += 1
-                # remove imageset so your asset catalog stays clean
-                shutil.rmtree(imageset, ignore_errors=True)
-                used_asset_names.discard(asset_name)
-                continue
+            if args.incremental and image_path.exists() and image_path.stat().st_size > 0:
+                kept += 1
+            else:
+                try:
+                    _download(url, image_path)
+                    downloaded += 1
+                except Exception as ex:
+                    print(f"[WARN] Download failed for {sc_with} from {url}: {ex}", file=sys.stderr)
+                    skipped += 1
+                    # remove imageset so your asset catalog stays clean
+                    shutil.rmtree(imageset, ignore_errors=True)
+                    used_asset_names.discard(asset_name)
+                    continue
 
         if args.emit_report:
             report.append({
@@ -310,9 +282,16 @@ def main() -> int:
         swift_path = Path(args.swift).expanduser().resolve()
         write_swift_enum(list(used_asset_names), swift_path, enum_name=args.enum_name)
 
-    print(f"[OK] Found emojis in HTML: {len(items)}")
+    print(f"[OK] Found emojis in JSON: {len(items)}")
     print(f"[OK] Assets created: {len(used_asset_names)}")
-    print(f"[OK] Downloaded: {downloaded}" if args.download else "[NOTE] Images were NOT downloaded (use --download).")
+    if args.download:
+        if args.incremental:
+            print(f"[OK] Already present (kept): {kept}")
+            print(f"[OK] Newly downloaded: {downloaded}")
+        else:
+            print(f"[OK] Downloaded: {downloaded}")
+    else:
+        print("[NOTE] Images were NOT downloaded (use --download).")
     print(f"[OK] Skipped: {skipped}")
     print(f"[OK] Xcode asset catalog: {xcassets}")
     if args.emit_report:
