@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 from dataclasses import dataclass
@@ -169,6 +170,16 @@ def try_convert_svgs_to_pdf(svg_paths: Dict[str, Path], pdf_dir: Path) -> Dict[s
     Convert SVGs to PDFs using cairosvg if installed.
     Returns map: symbol_id -> pdf_path
     """
+    # Help cairocffi find Homebrew's cairo on macOS
+    if sys.platform == "darwin":
+        import subprocess as _sp
+        _brew = _sp.run(["brew", "--prefix", "cairo"], capture_output=True, text=True)
+        if _brew.returncode == 0 and _brew.stdout.strip():
+            _lib = os.path.join(_brew.stdout.strip(), "lib")
+            _existing = os.environ.get("DYLD_FALLBACK_LIBRARY_PATH", "")
+            if _lib not in _existing:
+                os.environ["DYLD_FALLBACK_LIBRARY_PATH"] = f"{_lib}:{_existing}" if _existing else _lib
+
     try:
         import cairosvg  # type: ignore
     except Exception:
