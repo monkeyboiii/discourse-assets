@@ -37,7 +37,7 @@ uv run \
 # Step 2: Copy xcassets into the Xcode project
 # ---------------------------------------------------------------------------
 echo "=== Step 2: Copy xcassets to App ==="
-rsync -aEc assets/emojis/DiscourseEmojis.xcassets/ "$KIT_DIR/Resources"
+rsync -aEc assets/emojis/DiscourseEmojis.xcassets/ "$KIT_DIR/Resources/DiscourseEmojis.xcassets/"
 
 
 # ---------------------------------------------------------------------------
