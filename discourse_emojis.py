@@ -151,17 +151,49 @@ def write_swift_enum(asset_names: list[str], swift_path: Path, enum_name: str = 
     swift_path.write_text("\n".join(lines), encoding="utf-8")
 
 
-def _load_emoji_json(json_path: Path) -> list[dict[str, str]]:
-    """Load emojis.json and return a flat list of {shortcode_with_colons, src}."""
+def _tone_url(base_url: str, tone: int) -> str:
+    """
+    Derive skin-tone variant URL from base emoji URL.
+
+    /images/emoji/twitter/waving_hand.png?v=15
+    → /images/emoji/twitter/waving_hand/2.png?v=15
+    """
+    # Split off query string
+    if "?" in base_url:
+        path_part, query_part = base_url.rsplit("?", 1)
+        query_suffix = "?" + query_part
+    else:
+        path_part = base_url
+        query_suffix = ""
+
+    # Split at the last dot to get extension
+    dot_idx = path_part.rfind(".")
+    if dot_idx == -1:
+        # No extension, just append /tone
+        return f"{path_part}/{tone}{query_suffix}"
+
+    stem = path_part[:dot_idx]
+    ext = path_part[dot_idx:]
+    return f"{stem}/{tone}{ext}{query_suffix}"
+
+
+def _tone_asset_name(base_asset: str, tone: int) -> str:
+    """e.g. _tone_asset_name("emoji_waving_hand", 2) -> "emoji_waving_hand_t2" """
+    return f"{base_asset}_t{tone}"
+
+
+def _load_emoji_json(json_path: Path) -> list[dict]:
+    """Load emojis.json and return a flat list of {shortcode_with_colons, src, tonable}."""
     with open(json_path, encoding="utf-8") as f:
         emoji_data = json.load(f)
 
-    items: list[dict[str, str]] = []
+    items: list[dict] = []
     for group_entries in emoji_data.values():
         for entry in group_entries:
             name = entry["name"]
             url = entry["url"]
-            items.append({"shortcode_with_colons": f":{name}:", "src": url})
+            tonable = entry.get("tonable", False)
+            items.append({"shortcode_with_colons": f":{name}:", "src": url, "tonable": tonable})
     return items
 
 
@@ -180,6 +212,8 @@ def main() -> int:
     ap.add_argument("--enum-name", default="EmojiAsset", help="Swift enum name when using --swift")
     ap.add_argument("--incremental", action="store_true",
                     help="Incremental mode: keep existing assets, only download missing/new emojis")
+    ap.add_argument("--tones", action=argparse.BooleanOptionalAction, default=True,
+                    help="Download skin-tone variants (t2-t6) for tonable emojis (default: enabled)")
     args = ap.parse_args()
 
     items = _load_emoji_json(args.json)
@@ -203,6 +237,9 @@ def main() -> int:
     downloaded = 0
     skipped = 0
     kept = 0
+    tone_downloaded = 0
+    tone_kept = 0
+    tone_skipped = 0
 
     for it in items:
         sc_with = it["shortcode_with_colons"]   # ":smiley:"
@@ -275,6 +312,31 @@ def main() -> int:
                 "filename": filename,
             })
 
+        # Download skin-tone variants for tonable emojis
+        if args.tones and it.get("tonable", False):
+            for tone in range(2, 7):  # t2 through t6
+                t_asset = _tone_asset_name(asset_name, tone)
+                t_url = _tone_url(url, tone)
+                t_ext = _ext_from_url(t_url, default=ext)
+                t_filename = f"{t_asset}{t_ext}"
+                t_imageset = _create_imageset(xcassets, t_asset, t_filename)
+                t_image_path = t_imageset / t_filename
+
+                used_asset_names.add(t_asset)
+
+                if args.download:
+                    if args.incremental and t_image_path.exists() and t_image_path.stat().st_size > 0:
+                        tone_kept += 1
+                    else:
+                        try:
+                            _download(t_url, t_image_path)
+                            tone_downloaded += 1
+                        except Exception as ex:
+                            print(f"[WARN] Tone {tone} download failed for {sc_with} from {t_url}: {ex}", file=sys.stderr)
+                            tone_skipped += 1
+                            shutil.rmtree(t_imageset, ignore_errors=True)
+                            used_asset_names.discard(t_asset)
+
     if args.emit_report:
         _write_json(out_dir / "emoji_assets_report.json", report)
 
@@ -290,6 +352,14 @@ def main() -> int:
             print(f"[OK] Newly downloaded: {downloaded}")
         else:
             print(f"[OK] Downloaded: {downloaded}")
+        if args.tones:
+            if args.incremental:
+                print(f"[OK] Tone variants kept: {tone_kept}")
+                print(f"[OK] Tone variants downloaded: {tone_downloaded}")
+            else:
+                print(f"[OK] Tone variants downloaded: {tone_downloaded}")
+            if tone_skipped:
+                print(f"[WARN] Tone variants failed: {tone_skipped}")
     else:
         print("[NOTE] Images were NOT downloaded (use --download).")
     print(f"[OK] Skipped: {skipped}")
