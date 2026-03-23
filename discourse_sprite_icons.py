@@ -78,7 +78,7 @@ def to_lower_camel(s: str) -> str:
     out = first + "".join(rest)
     if re.match(r"^[0-9]", out):
         out = "_" + out
-    # Avoid a few common Swift keywords if you hit them
+    # Avoid a few Swift keywords that can't be used even with backticks as enum cases
     if out in {"class", "struct", "enum", "protocol", "extension", "import"}:
         out = out + "Icon"
     return out
@@ -111,14 +111,16 @@ def parse_symbols(svg_text: str) -> List[SymbolIcon]:
     except ET.ParseError as e:
         raise ValueError(f"Failed to parse SVG XML: {e}") from e
 
-    # Find all <symbol> nodes (namespace-insensitive)
+    # Find all <symbol> nodes (namespace-insensitive), deduplicate by id
     symbols: List[SymbolIcon] = []
+    seen_ids: set[str] = set()
     for elem in root.iter():
         if strip_ns(elem.tag).lower() != "symbol":
             continue
         sid = elem.attrib.get("id")
-        if not sid:
+        if not sid or sid in seen_ids:
             continue
+        seen_ids.add(sid)
         viewbox = elem.attrib.get("viewBox") or elem.attrib.get("viewbox")
         if not viewbox:
             # Some sprites may omit; try inheriting from root viewBox if present
@@ -240,6 +242,23 @@ def write_xcassets(
         (imageset_dir / "Contents.json").write_text(json.dumps(contents, indent=2), encoding="utf-8")
 
 
+_SWIFT_KEYWORDS = {
+    "associatedtype", "class", "deinit", "enum", "extension", "func",
+    "import", "init", "inout", "let", "operator", "precedencegroup",
+    "protocol", "struct", "subscript", "typealias", "var",
+    "break", "case", "continue", "default", "defer", "do", "else",
+    "fallthrough", "for", "guard", "if", "in", "repeat", "return",
+    "switch", "where", "while",
+    "as", "catch", "false", "is", "nil", "rethrows", "self", "super",
+    "throw", "throws", "true", "try",
+}
+
+
+def _swift_case(name: str) -> str:
+    """Backtick-escape Swift reserved keywords used as enum case names."""
+    return f"`{name}`" if name in _SWIFT_KEYWORDS else name
+
+
 def write_swift_enum(symbol_ids: List[str], swift_path: Path, enum_name: str = "IconAsset") -> None:
     """
     Generate a Swift enum mapping case names -> asset string.
@@ -253,7 +272,7 @@ def write_swift_enum(symbol_ids: List[str], swift_path: Path, enum_name: str = "
     for sid in sorted(symbol_ids):
         case_name = to_lower_camel(safe_asset_name(sid))
         asset_name = safe_asset_name(sid)
-        lines.append(f'    case {case_name} = "{asset_name}"')
+        lines.append(f'    case {_swift_case(case_name)} = "{asset_name}"')
     lines.append("}")
     lines.append("")
     lines.append(f"extension {enum_name} {{")
