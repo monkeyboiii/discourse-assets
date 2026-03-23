@@ -29,12 +29,12 @@ Example:
 
 from __future__ import annotations
 
-import argparse
-import json
 import os
 import re
-import shutil
 import sys
+import json
+import shutil
+import argparse
 from pathlib import Path
 from urllib.parse import quote, urljoin, urlparse, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
@@ -209,7 +209,7 @@ def main() -> int:
     ap.add_argument("--emit-report", action="store_true",
                     help="Emit a small report JSON (shortcode -> assetName, url) for debugging")
     ap.add_argument("--swift", default="", help="If set, path to generate a Swift enum file (e.g. Sources/Emojis.swift)")
-    ap.add_argument("--enum-name", default="EmojiAsset", help="Swift enum name when using --swift")
+    ap.add_argument("--enum-name", default="DiscourseEmoji", help="Swift enum name when using --swift")
     ap.add_argument("--incremental", action="store_true",
                     help="Incremental mode: keep existing assets, only download missing/new emojis")
     ap.add_argument("--tones", action=argparse.BooleanOptionalAction, default=True,
@@ -295,6 +295,7 @@ def main() -> int:
                 try:
                     _download(url, image_path)
                     downloaded += 1
+                    print(f"  ↓ {sc_with} -> {asset_name}")
                 except Exception as ex:
                     print(f"[WARN] Download failed for {sc_with} from {url}: {ex}", file=sys.stderr)
                     skipped += 1
@@ -331,6 +332,7 @@ def main() -> int:
                         try:
                             _download(t_url, t_image_path)
                             tone_downloaded += 1
+                            print(f"  ↓ {sc_with} t{tone} -> {t_asset}")
                         except Exception as ex:
                             print(f"[WARN] Tone {tone} download failed for {sc_with} from {t_url}: {ex}", file=sys.stderr)
                             tone_skipped += 1
