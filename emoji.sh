@@ -1,15 +1,26 @@
 #!/usr/bin/env bash
+
+
 set -euo pipefail
 cd "$(dirname "$0")"
 
+
 FORUM_URL="https://forum.dirtbikechina.com"
-APP_DIR="../../App"
+KIT_DIR="../Sources/DiscourseAssetKit"
+DATA_JS_URL="https://raw.githubusercontent.com/discourse/discourse/main/frontend/pretty-text/addon/emoji/data.js"
+
+
+# ---------------------------------------------------------------------------
+# Step 0: Download source data files
+# ---------------------------------------------------------------------------
+echo "=== Step 0: Download source data files ==="
+curl -fsSL "$FORUM_URL/emojis.json" | uv run python -m json.tool --indent 4 --no-ensure-ascii > assets/emojis.json
+curl -fsSL $DATA_JS_URL -o assets/data.js
 
 
 # ---------------------------------------------------------------------------
 # Step 1: Download emoji images & generate xcassets + Swift enum
 # ---------------------------------------------------------------------------
-# Requires: assets/emojis.json (pre-downloaded from /emojis.json endpoint)
 echo "=== Step 1: Download emoji images & generate xcassets + Swift enum ==="
 uv run \
     python discourse_emojis.py \
@@ -26,7 +37,7 @@ uv run \
 # Step 2: Copy xcassets into the Xcode project
 # ---------------------------------------------------------------------------
 echo "=== Step 2: Copy xcassets to App ==="
-cp -r assets/emojis/DiscourseEmojis.xcassets/ "$APP_DIR/DiscourseEmojis.xcassets/"
+rsync -aEc assets/emojis/DiscourseEmojis.xcassets/ "$KIT_DIR/Resources/DiscourseEmojis.xcassets/"
 
 
 # ---------------------------------------------------------------------------
@@ -39,7 +50,7 @@ echo "=== Step 3: Generate lookup tables (aliases, replacements, tones) ==="
 uv run \
     python generate_emoji_lookups.py \
     --datajs assets/data.js \
-    --out-dir "$APP_DIR/Models/Site/Emoji/Generated"
+    --out-dir "$KIT_DIR/Emoji/Generated"
 
 
 # ---------------------------------------------------------------------------
@@ -51,11 +62,11 @@ uv run \
 
 echo ""
 echo "=== Done ==="
-echo "  xcassets:  $APP_DIR/DiscourseEmojis.xcassets/"
+echo "  xcassets:  $KIT_DIR/Resources/DiscourseEmojis.xcassets/"
 echo "  enum:      DiscourseEmoji.swift (merge into app manually)"
-echo "  aliases:   $APP_DIR/Models/Site/Emoji/Generated/EmojiAliasTable.swift"
-echo "  replace:   $APP_DIR/Models/Site/Emoji/Generated/EmojiReplacementTable.swift"
-echo "  tones:     $APP_DIR/Models/Site/Emoji/Generated/EmojiToneTable.swift"
+echo "  aliases:   $KIT_DIR/Generated/EmojiAliasTable.swift"
+echo "  replace:   $KIT_DIR/Generated/EmojiReplacementTable.swift"
+echo "  tones:     $KIT_DIR/Generated/EmojiToneTable.swift"
 echo ""
 echo "NOTE: Manually merge DiscourseEmoji.swift enum cases into"
 echo "  App/Views/DesignSystem/Emoji/DiscourseEmoji.swift"

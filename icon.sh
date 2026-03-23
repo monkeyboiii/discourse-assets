@@ -19,7 +19,7 @@ uv run --with cairosvg \
 
 
 # overwrite icons in Xcode project
-cp -r assets/icons/DiscourseIcons.xcassets/ ../../App/DiscourseIcons.xcassets/
+rsync -aEc assets/icons/DiscourseIcons.xcassets/ ../Sources/DiscourseAssetKit/Resources/DiscourseIcons.xcassets/
 
 
 # watch for duplicate icons
