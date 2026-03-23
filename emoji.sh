@@ -29,7 +29,7 @@ uv run \
     --base-url "$FORUM_URL" \
     --download \
     --incremental \
-    --swift DiscourseEmoji.swift \
+    --swift "$KIT_DIR/Emoji/Generated/DiscourseEmoji.swift" \
     --enum-name DiscourseEmoji
 
 
@@ -54,20 +54,23 @@ uv run \
 
 
 # ---------------------------------------------------------------------------
-# Manual step: copy DiscourseEmoji.swift enum content into
-#   App/Views/DesignSystem/Emoji/DiscourseEmoji.swift
-# The app file has a hand-written extension (sanitizeShortcodeToAssetName,
-# init?(shortcodeWithColons:)) that must be preserved after the enum cases.
+# Step 4: Generate static emoji item table (replaces runtime JSON parsing)
+#   - EmojiItemTable.swift  (pre-computed EmojiItem data, ~2000 entries)
 # ---------------------------------------------------------------------------
+echo "=== Step 4: Generate static emoji item table ==="
+uv run \
+    python generate_emoji_items.py \
+    --json assets/emojis.json \
+    --datajs assets/data.js \
+    --enum-file "$KIT_DIR/Emoji/Generated/DiscourseEmoji.swift" \
+    --out "$KIT_DIR/Emoji/Generated/EmojiItemTable.swift"
+
 
 echo ""
 echo "=== Done ==="
 echo "  xcassets:  $KIT_DIR/Resources/DiscourseEmojis.xcassets/"
-echo "  enum:      DiscourseEmoji.swift (merge into app manually)"
-echo "  aliases:   $KIT_DIR/Generated/EmojiAliasTable.swift"
-echo "  replace:   $KIT_DIR/Generated/EmojiReplacementTable.swift"
-echo "  tones:     $KIT_DIR/Generated/EmojiToneTable.swift"
-echo ""
-echo "NOTE: Manually merge DiscourseEmoji.swift enum cases into"
-echo "  App/Views/DesignSystem/Emoji/DiscourseEmoji.swift"
-echo "  (preserve the extension at the bottom of that file)"
+echo "  enum:      $KIT_DIR/Emoji/Generated/DiscourseEmoji.swift"
+echo "  aliases:   $KIT_DIR/Emoji/Generated/EmojiAliasTable.swift"
+echo "  replace:   $KIT_DIR/Emoji/Generated/EmojiReplacementTable.swift"
+echo "  tones:     $KIT_DIR/Emoji/Generated/EmojiToneTable.swift"
+echo "  items:     $KIT_DIR/Emoji/Generated/EmojiItemTable.swift"
