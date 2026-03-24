@@ -5,6 +5,17 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 
+# ---------------------------------------------------------------------------
+# Parse arguments
+# ---------------------------------------------------------------------------
+LEGACY=false
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --legacy) LEGACY=true; shift ;;
+        *) echo "Unknown option: $1" >&2; exit 1 ;;
+    esac
+done
+
 FORUM_URL="https://forum.dirtbikechina.com"
 KIT_DIR="../Sources/DiscourseAssetKit"
 DATA_JS_URL="https://raw.githubusercontent.com/discourse/discourse/main/frontend/pretty-text/addon/emoji/data.js"
@@ -19,9 +30,18 @@ curl -fsSL $DATA_JS_URL -o assets/data.js
 
 
 # ---------------------------------------------------------------------------
-# Step 1: Download emoji images & generate xcassets + Swift enum
+# Step 1: Download emoji images & generate Swift enum
+#   Default: flat PNGs to assets/emojis/Emojis/
+#   --legacy: xcassets to assets/emojis/DiscourseEmojis.xcassets/
 # ---------------------------------------------------------------------------
-echo "=== Step 1: Download emoji images & generate xcassets + Swift enum ==="
+LEGACY_FLAG=""
+if $LEGACY; then
+    echo "=== Step 1: Download emoji images (legacy xcassets) ==="
+    LEGACY_FLAG="--legacy"
+else
+    echo "=== Step 1: Download emoji images (flat PNGs) ==="
+fi
+
 uv run \
     python discourse_emojis.py \
     --json assets/emojis.json \
@@ -30,14 +50,21 @@ uv run \
     --download \
     --incremental \
     --swift "$KIT_DIR/Emoji/Generated/DiscourseEmoji.swift" \
-    --enum-name DiscourseEmoji
+    --enum-name DiscourseEmoji \
+    $LEGACY_FLAG
 
 
 # ---------------------------------------------------------------------------
-# Step 2: Copy xcassets into the Xcode project
+# Step 2: Copy assets into the Swift package
 # ---------------------------------------------------------------------------
-echo "=== Step 2: Copy xcassets to App ==="
-rsync -aEc assets/emojis/DiscourseEmojis.xcassets/ "$KIT_DIR/Resources/DiscourseEmojis.xcassets/"
+if $LEGACY; then
+    echo "=== Step 2: rsync xcassets (legacy) ==="
+    rsync -aEc assets/emojis/DiscourseEmojis.xcassets/ "$KIT_DIR/Resources/DiscourseEmojis.xcassets/"
+else
+    echo "=== Step 2: Copy flat PNGs ==="
+    rm -rf "$KIT_DIR/Resources/Emojis"
+    cp -R assets/emojis/Emojis "$KIT_DIR/Resources/Emojis"
+fi
 
 
 # ---------------------------------------------------------------------------
@@ -68,7 +95,11 @@ uv run \
 
 echo ""
 echo "=== Done ==="
-echo "  xcassets:  $KIT_DIR/Resources/DiscourseEmojis.xcassets/"
+if $LEGACY; then
+    echo "  xcassets:  $KIT_DIR/Resources/DiscourseEmojis.xcassets/"
+else
+    echo "  emojis:    $KIT_DIR/Resources/Emojis/"
+fi
 echo "  enum:      $KIT_DIR/Emoji/Generated/DiscourseEmoji.swift"
 echo "  aliases:   $KIT_DIR/Emoji/Generated/EmojiAliasTable.swift"
 echo "  replace:   $KIT_DIR/Emoji/Generated/EmojiReplacementTable.swift"
