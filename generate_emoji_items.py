@@ -262,21 +262,29 @@ def generate_item_table(
     lines.append("    static let entries: [String: [EmojiItem]] = [")
 
     total = 0
-    skipped = 0
+    skipped_dup = 0
+    skipped_missing = 0
 
     for gid in group_order:
         entries = emojis_json[gid]
         items: list[tuple[str, str]] = []  # (baseName, swift_line)
 
+        seen: set[str] = set()
         for entry in entries:
             name = entry["name"]
+            if name in seen:
+                skipped_dup += 1
+                print(f"    [SKIP] duplicate '{name}' in group '{gid}'")
+                continue
+            seen.add(name)
             tonable = entry.get("tonable", False)
             search_aliases = entry.get("search_aliases", [])
 
             asset_name = _sanitize_shortcode_to_asset(f":{name}:")
             case_name = valid_assets.get(asset_name)
             if case_name is None:
-                skipped += 1
+                skipped_missing += 1
+                print(f"    [SKIP] no enum case for '{name}' (asset: {asset_name}) in group '{gid}'")
                 continue
 
             extra_aliases = canonical_to_aliases.get(name, [])
@@ -300,8 +308,6 @@ def generate_item_table(
             items.append((name, swift_line))
             total += 1
 
-        items.sort(key=lambda x: x[0])
-
         lines.append(f"        {_swift_string_literal(gid)}: [")
         for _, swift_line in items:
             lines.append(swift_line)
@@ -311,7 +317,8 @@ def generate_item_table(
     lines.append("}")
     lines.append("")
 
-    print(f"  {len(group_order)} groups, {total} entries, {skipped} skipped")
+    skipped = skipped_dup + skipped_missing
+    print(f"  {len(group_order)} groups, {total} entries, {skipped} skipped ({skipped_dup} duplicate, {skipped_missing} missing asset)")
     return "\n".join(lines)
 
 
