@@ -189,6 +189,11 @@ def _swift_string_literal(s: str) -> str:
     return f'"{escaped}"'
 
 
+def _split_dict_into_chunks(items: list[tuple[str, str]], chunk_size: int = 500) -> list[list[tuple[str, str]]]:
+    """Split sorted key-value pairs into chunks for smaller Swift literals."""
+    return [items[i:i + chunk_size] for i in range(0, len(items), chunk_size)]
+
+
 def generate_alias_table(aliases: dict[str, list[str]]) -> str:
     """Generate EmojiAliasTable.swift content."""
     lines: list[str] = []
@@ -199,16 +204,32 @@ def generate_alias_table(aliases: dict[str, list[str]]) -> str:
     lines.append("enum EmojiAliasTable {")
 
     # alias -> canonical (inverted map, deduplicated — first canonical wins)
-    lines.append("    /// Alias name -> canonical name")
-    lines.append("    static let aliases: [String: String] = [")
+    # Split into chunks to reduce Swift compiler memory.
     inverted: dict[str, str] = {}
     for canonical, alias_list in sorted(aliases.items()):
         for alias in alias_list:
             if alias not in inverted:
                 inverted[alias] = canonical
-    for alias, canonical in sorted(inverted.items()):
-        lines.append(f"        {_swift_string_literal(alias)}: {_swift_string_literal(canonical)},")
-    lines.append("    ]")
+    sorted_pairs = sorted(inverted.items())
+    chunks = _split_dict_into_chunks(sorted_pairs)
+
+    for idx, chunk in enumerate(chunks):
+        lines.append(f"    private static let _aliases{idx}: [String: String] = [")
+        for alias, canonical in chunk:
+            lines.append(f"        {_swift_string_literal(alias)}: {_swift_string_literal(canonical)},")
+        lines.append("    ]")
+        lines.append("")
+
+    lines.append("    /// Alias name -> canonical name")
+    if len(chunks) == 1:
+        lines.append("    static let aliases: [String: String] = _aliases0")
+    else:
+        lines.append("    static let aliases: [String: String] = {")
+        lines.append("        var d = _aliases0")
+        for i in range(1, len(chunks)):
+            lines.append(f"        d.merge(_aliases{i}, uniquingKeysWith: {{ _, new in new }})")
+        lines.append("        return d")
+        lines.append("    }()")
     lines.append("")
 
     # canonical -> [aliases]
@@ -234,15 +255,30 @@ def generate_replacement_table(replacements: dict[str, str], translations: dict[
     lines.append("")
     lines.append("enum EmojiReplacementTable {")
 
-    # Unicode -> shortcode
+    # Unicode -> shortcode (split into chunks)
+    sorted_replacements = sorted(replacements.items(), key=lambda x: x[1])
+    chunks = _split_dict_into_chunks(sorted_replacements, chunk_size=500)
+
+    for idx, chunk in enumerate(chunks):
+        lines.append(f"    private static let _unicode{idx}: [String: String] = [")
+        for char, shortcode in chunk:
+            lines.append(f"        {_swift_string_literal(char)}: {_swift_string_literal(shortcode)},")
+        lines.append("    ]")
+        lines.append("")
+
     lines.append("    /// Unicode emoji character -> canonical shortcode")
-    lines.append("    static let unicodeToShortcode: [String: String] = [")
-    for char, shortcode in sorted(replacements.items(), key=lambda x: x[1]):
-        lines.append(f"        {_swift_string_literal(char)}: {_swift_string_literal(shortcode)},")
-    lines.append("    ]")
+    if len(chunks) == 1:
+        lines.append("    static let unicodeToShortcode: [String: String] = _unicode0")
+    else:
+        lines.append("    static let unicodeToShortcode: [String: String] = {")
+        lines.append("        var d = _unicode0")
+        for i in range(1, len(chunks)):
+            lines.append(f"        d.merge(_unicode{i}, uniquingKeysWith: {{ _, new in new }})")
+        lines.append("        return d")
+        lines.append("    }()")
     lines.append("")
 
-    # Emoticon -> shortcode
+    # Emoticon -> shortcode (small, no split needed)
     lines.append("    /// Emoticon text -> canonical shortcode")
     lines.append("    static let emoticonToShortcode: [String: String] = [")
     for emoticon, shortcode in sorted(translations.items(), key=lambda x: x[1]):

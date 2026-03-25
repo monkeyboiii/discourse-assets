@@ -258,12 +258,16 @@ def generate_item_table(
     lines.append("    ]")
     lines.append("")
 
-    # Emit entries (using EmojiItem directly)
-    lines.append("    static let entries: [String: [EmojiItem]] = [")
+    # Emit per-group arrays as separate static lets to reduce Swift
+    # compiler memory (single massive dictionary literal causes exponential
+    # type-checker cost).
 
     total = 0
     skipped_dup = 0
     skipped_missing = 0
+
+    # Maps group_id -> Swift property name (for the final entries dict)
+    group_prop_names: list[tuple[str, str]] = []
 
     for gid in group_order:
         entries = emojis_json[gid]
@@ -295,7 +299,7 @@ def generate_item_table(
             tonable_str = "true" if tonable else "false"
 
             swift_line = (
-                f"            EmojiItem("
+                f"        EmojiItem("
                 f"id: {_swift_string_literal(asset_name)}, "
                 f"emoji: .{case_name}, "
                 f"baseName: {_swift_string_literal(name)}, "
@@ -308,11 +312,19 @@ def generate_item_table(
             items.append((name, swift_line))
             total += 1
 
-        lines.append(f"        {_swift_string_literal(gid)}: [")
+        # Emit a private static let for this group
+        prop_name = "_" + re.sub(r"[^A-Za-z0-9]+", "_", gid).strip("_")
+        group_prop_names.append((gid, prop_name))
+        lines.append(f"    private static let {prop_name}: [EmojiItem] = [")
         for _, swift_line in items:
             lines.append(swift_line)
-        lines.append("        ],")
+        lines.append("    ]")
+        lines.append("")
 
+    # Emit the combined entries dictionary referencing per-group lets
+    lines.append("    static let entries: [String: [EmojiItem]] = [")
+    for gid, prop_name in group_prop_names:
+        lines.append(f"        {_swift_string_literal(gid)}: {prop_name},")
     lines.append("    ]")
     lines.append("}")
     lines.append("")
