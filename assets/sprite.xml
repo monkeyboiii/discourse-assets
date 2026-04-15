@@ -252,6 +252,9 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
   <symbol id="code" viewBox="0 0 640 512">
     <path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/>
   </symbol>
+  <symbol id="code-branch" viewBox="0 0 448 512">
+    <path d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/>
+  </symbol>
   <symbol id="coins" viewBox="0 0 512 512">
     <path d="M512 80c0 18-14.3 34.6-38.4 48c-29.1 16.1-72.5 27.5-122.3 30.9c-3.7-1.8-7.4-3.5-11.3-5C300.6 137.4 248.2 128 192 128c-8.3 0-16.4 .2-24.5 .6l-1.1-.6C142.3 114.6 128 98 128 80c0-44.2 86-80 192-80S512 35.8 512 80zM160.7 161.1c10.2-.7 20.7-1.1 31.3-1.1c62.2 0 117.4 12.3 152.5 31.4C369.3 204.9 384 221.7 384 240c0 4-.7 7.9-2.1 11.7c-4.6 13.2-17 25.3-35 35.5c0 0 0 0 0 0c-.1 .1-.3 .1-.4 .2c0 0 0 0 0 0s0 0 0 0c-.3 .2-.6 .3-.9 .5c-35 19.4-90.8 32-153.6 32c-59.6 0-112.9-11.3-148.2-29.1c-1.9-.9-3.7-1.9-5.5-2.9C14.3 274.6 0 258 0 240c0-34.8 53.4-64.5 128-75.4c10.5-1.5 21.4-2.7 32.7-3.5zM416 240c0-21.9-10.6-39.9-24.1-53.4c28.3-4.4 54.2-11.4 76.2-20.5c16.3-6.8 31.5-15.2 43.9-25.5l0 35.4c0 19.3-16.5 37.1-43.8 50.9c-14.6 7.4-32.4 13.7-52.4 18.5c.1-1.8 .2-3.5 .2-5.3zm-32 96c0 18-14.3 34.6-38.4 48c-1.8 1-3.6 1.9-5.5 2.9C304.9 404.7 251.6 416 192 416c-62.8 0-118.6-12.6-153.6-32C14.3 370.6 0 354 0 336l0-35.4c12.5 10.3 27.6 18.7 43.9 25.5C83.4 342.6 135.8 352 192 352s108.6-9.4 148.1-25.9c7.8-3.2 15.3-6.9 22.4-10.9c6.1-3.4 11.8-7.2 17.2-11.2c1.5-1.1 2.9-2.3 4.3-3.4l0 3.4 0 5.7 0 26.3zm32 0l0-32 0-25.9c19-4.2 36.5-9.5 52.1-16c16.3-6.8 31.5-15.2 43.9-25.5l0 35.4c0 10.5-5 21-14.9 30.9c-16.3 16.3-45 29.7-81.3 38.4c.1-1.7 .2-3.5 .2-5.3zM192 448c56.2 0 108.6-9.4 148.1-25.9c16.3-6.8 31.5-15.2 43.9-25.5l0 35.4c0 44.2-86 80-192 80S0 476.2 0 432l0-35.4c12.5 10.3 27.6 18.7 43.9 25.5C83.4 438.6 135.8 448 192 448z"/>
   </symbol>
@@ -422,6 +425,9 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
   </symbol>
   <symbol id="envelope" viewBox="0 0 512 512">
     <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+  </symbol>
+  <symbol id="expand" viewBox="0 0 448 512">
+    <path d="M32 32C14.3 32 0 46.3 0 64l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-64 64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32l96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0 0-64zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0 0 64c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96c0-17.7-14.3-32-32-32l-96 0zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 64-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c17.7 0 32-14.3 32-32l0-96z"/>
   </symbol>
   <symbol id="eye" viewBox="0 0 576 512">
     <path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/>
@@ -1154,6 +1160,37 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
   <symbol id="patreon-new" viewBox="0 0 1080 1080">
     <path d="M1033.05,324.45c-0.19-137.9-107.59-250.92-233.6-291.7c-156.48-50.64-362.86-43.3-512.28,27.2      C106.07,145.41,49.18,332.61,47.06,519.31c-1.74,153.5,13.58,557.79,241.62,560.67c169.44,2.15,194.67-216.18,273.07-321.33      c55.78-74.81,127.6-95.94,216.01-117.82C929.71,603.22,1033.27,483.3,1033.05,324.45z"/>
   </symbol>
+  <symbol id="vote-up" viewBox="0 0 24 24">
+    <path d="M2 15h7v5h6v-5h7l-10-11z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="vote-up-filled" viewBox="0 0 24 24">
+    <path d="M2 15h7v5h6v-5h7l-10-11z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="blocks-sparkles" viewBox="0 0 180 180">
+    <rect width="180" height="180" rx="23.854" fill="#F15D22"/>
+    <path d="M48.3224 65.5711C48.3224 65.5711 47.1453 58.9238 43.5976 55.0244C39.7707 50.8181 30.5696 47.371 30.5696 47.371C30.5696 47.371 38.1661 44.6011 42.0965 40.4913C45.74 36.6813 48.7696 29.6182 48.7696 29.6182C48.7696 29.6182 51.4183 36.752 54.966 40.6514C58.7929 44.8576 66.5225 47.8182 66.5225 47.8182C66.5225 47.8182 58.7379 49.2749 54.8076 53.3847C51.164 57.1946 48.3224 65.5711 48.3224 65.5711Z" fill="#FFFEF5"/>
+    <path d="M98.2906 149.968C98.2906 149.968 88.403 126.124 78.3543 115.079C67.5148 103.165 48.0063 98.4166 48.0063 98.4166C48.0063 98.4166 67.635 93.4963 78.7675 81.8555C89.0878 71.0639 99.5572 48.1324 99.5572 48.1324C99.5572 48.1324 109.453 71.3172 119.502 82.3621C130.341 94.2763 149.841 99.6833 149.841 99.6833C149.841 99.6833 128.613 103.925 117.48 115.566C107.16 126.357 98.2906 149.968 98.2906 149.968Z" fill="#FFFEF5"/>
+  </symbol>
+  <symbol id="blocks-bell" viewBox="0 0 180 180">
+    <rect width="180" height="180" rx="26.9118" fill="#0CA64E"/>
+    <path d="M96.7279 42.5368V46.7417C112.076 49.8955 123.64 63.3513 123.64 79.5404V83.5352C123.64 93.4168 127.214 103.088 133.732 110.447L135.203 112.129C137.096 114.231 137.516 116.965 136.465 119.488C135.414 121.8 132.891 123.272 130.368 123.272H49.6324C46.8991 123.272 44.3761 121.8 43.3249 119.488C42.2737 116.965 42.6942 114.231 44.5864 112.129L46.0581 110.447C52.5758 103.088 56.3603 93.4168 56.3603 83.5352V79.5404C56.3603 63.3513 67.7137 49.8955 83.2721 46.7417V42.5368C83.2721 38.9625 86.2155 35.8088 90 35.8088C93.5742 35.8088 96.7279 38.9625 96.7279 42.5368ZM90 143.456C86.4258 143.456 82.8516 142.194 80.3286 139.671C77.8056 137.148 76.5441 133.574 76.5441 130H103.456C103.456 133.574 101.984 137.148 99.4612 139.671C96.9382 142.194 93.364 143.456 90 143.456Z" fill="#FFFEF5"/>
+  </symbol>
+  <symbol id="blocks-chat" viewBox="0 0 210 210">
+    <rect width="210" height="210" rx="26.8729" fill="#A04DFF"/>
+    <path d="M125.155 88.3952C125.155 108.97 105.42 125.345 81.4862 125.345C73.2984 125.345 65.9504 123.666 59.4421 120.307C54.1935 123.036 47.4753 125.345 39.2875 125.345C38.6576 125.345 38.0278 125.135 37.8179 124.506C37.6079 123.876 37.6079 123.246 38.2377 122.826C38.2377 122.616 43.0665 117.577 46.4256 110.649C40.967 104.351 37.8179 96.7929 37.8179 88.3952C37.8179 68.0306 57.3427 51.445 81.4862 51.445C105.42 51.445 125.155 68.0306 125.155 88.3952ZM163.574 144.66C166.934 151.378 171.552 156.207 171.552 156.417C171.972 156.837 172.182 157.467 171.972 158.097C171.762 158.726 171.132 158.936 170.503 158.936C162.945 158.936 156.436 156.837 151.188 154.528C145.519 157.257 138.801 158.936 131.873 158.936C112.768 158.936 97.0221 147.18 92.6133 131.014C115.077 126.605 131.873 109.18 131.873 88.3952C131.873 87.3455 131.663 86.2957 131.663 85.246C131.663 85.246 131.663 85.0361 131.873 85.0361C154.127 85.0361 172.182 101.622 172.182 121.986C172.182 130.594 168.823 138.362 163.574 144.66Z" fill="#FFFEF5"/>
+  </symbol>
+  <symbol id="blocks-plane" viewBox="0 0 180 180">
+    <rect width="180" height="180" rx="26.8729" fill="#28ABE2"/>
+    <path d="M143.536 44.2129L130.099 131.34C129.889 133.439 128.63 135.329 126.74 136.378C125.691 136.798 124.641 137.218 123.381 137.218C122.541 137.218 121.702 137.008 120.862 136.588L95.2486 125.881L84.5415 141.837C83.7017 143.307 82.2321 143.936 80.7625 143.936C78.4531 143.936 76.5636 142.047 76.5636 139.738V119.583C76.5636 117.903 76.9835 116.434 77.8232 115.384L123.591 56.5996L61.8675 112.235L40.2432 103.207C37.9338 102.158 36.2543 100.058 36.2543 97.3288C36.0443 94.3896 37.304 92.2902 39.6134 91.0305L133.668 37.4947C135.768 36.2351 138.707 36.2351 140.806 37.7047C142.906 39.1743 143.956 41.6936 143.536 44.2129Z" fill="#FFFEF5"/>
+  </symbol>
+  <symbol id="blocks-quote" viewBox="0 0 180 180">
+    <rect width="180" height="180" rx="26.8729" fill="#FFF470"/>
+    <path d="M63.1271 83.4725C74.2542 83.4725 83.2818 92.5001 83.2818 103.627C83.2818 114.964 74.2542 123.782 63.1271 123.782C51.7902 123.782 42.9725 114.964 42.9725 103.627V83.4725C42.9725 68.7764 54.9393 56.5996 69.8454 56.5996C73.4144 56.5996 76.5636 59.7488 76.5636 63.3179C76.5636 67.0969 73.4144 70.0361 69.8454 70.0361C62.2874 70.0361 56.4089 76.1245 56.4089 83.4725V84.7322C58.5084 84.1023 60.6078 83.4725 63.1271 83.4725ZM116.873 83.4725C128 83.4725 137.027 92.5001 137.027 103.627C137.027 114.964 128 123.782 116.873 123.782C105.536 123.782 96.7182 114.964 96.7182 103.627V83.4725C96.7182 68.7764 108.685 56.5996 123.591 56.5996C127.16 56.5996 130.309 59.7488 130.309 63.3179C130.309 67.0969 127.16 70.0361 123.591 70.0361C116.033 70.0361 110.155 76.1245 110.155 83.4725V84.7322C112.254 84.1023 114.354 83.4725 116.873 83.4725Z" fill="#6740A5"/>
+  </symbol>
+  <symbol id="blocks-reactions" viewBox="0 0 210 210">
+    <rect width="210" height="210" rx="26.8729" fill="#D5342A"/>
+    <path d="M114.37 100.885C115.772 102.323 118.102 102.365 119.611 100.962L119.755 100.814L142.15 77.0815C148.681 70.1534 148.168 58.8787 140.663 52.7186C134.187 47.3455 124.593 48.4186 118.78 54.6093L116.483 57.0416L114.123 54.6709C108.147 48.6361 98.5289 47.8172 92.1972 53.3598C84.9301 59.7153 84.6437 71.0734 91.3554 77.7535L114.37 100.885ZM64.9321 83.0524C43.3919 83.3373 26.2297 100.96 26.5146 122.5C26.7996 144.04 44.422 161.202 65.9622 160.918C87.5025 160.633 104.664 142.937 104.38 121.47C104.096 100.002 86.4724 82.7674 64.9321 83.0524ZM78.85 100.773C82.8524 100.72 86.0967 103.88 86.1496 107.882C86.2026 111.885 83.043 115.129 79.0406 115.182C75.0382 115.235 71.7939 112.075 71.7409 108.073C71.6152 104.071 74.8475 100.826 78.85 100.773ZM51.0514 101.141C55.0538 101.088 58.2981 104.247 58.351 108.25C58.404 112.252 55.2444 115.497 51.242 115.55C47.2396 115.602 43.9953 112.443 43.9423 108.44C43.8894 104.438 47.0489 101.194 51.0514 101.141ZM89.6205 133.674C83.7476 140.885 75.07 145.148 65.6825 145.273C56.295 145.397 47.5086 141.437 41.446 134.312C38.5627 130.929 43.6726 126.567 46.556 129.95C51.3602 135.491 58.244 138.675 65.5939 138.578C72.9438 138.48 79.7419 135.188 84.397 129.449C87.117 125.993 92.3406 130.218 89.6205 133.674ZM183.861 116.051C183.799 111.394 179.185 109.199 174.091 109.266L156.626 109.497C157.66 105.116 163.988 99.3556 163.902 92.8062C163.753 81.5267 156.386 80.3868 152.675 80.4359C149.546 80.4773 148.243 86.5356 147.553 89.3833C146.797 92.7414 146.041 96.1722 143.743 98.4589C138.932 103.472 136.394 109.692 130.579 115.737C130.052 114.434 128.657 113.506 127.129 113.527L119.342 113.63C117.305 113.657 115.652 115.28 115.678 117.245L116.148 152.757C116.174 154.722 117.869 156.3 119.906 156.274L127.693 156.171C129.731 156.144 131.383 154.52 131.357 152.556L131.348 151.901C131.568 151.971 131.787 152.04 132.005 152.038C134.408 152.079 137.7 153.345 140.116 154.405C145.02 156.524 151.169 159.135 158.591 159.037L159.028 159.031C165.577 158.945 173.363 158.769 176.432 154.216C177.718 152.379 178.355 150.988 176.701 147.006C180.311 144.775 181.699 139.662 177.284 136.081C183.058 132.366 182.981 126.544 177.848 123.7C182.269 122.259 183.97 118.816 183.861 116.051Z" fill="#FFFEF5"/>
+  </symbol>
   <symbol id="downward" viewBox="0 0 512 512">
     <g>
       <g>
@@ -1172,5 +1209,1215 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
   </symbol>
   <symbol id="discourse-gifs-gif" viewBox="0 0 1024 1024">
     <path d="M944 299H692c-4.4 0-8 3.6-8 8v406c0 4.4 3.6 8 8 8h59.2c4.4 0 8-3.6 8-8V549.9h168.2c4.4 0 8-3.6 8-8V495c0-4.4-3.6-8-8-8H759.2V364.2H944c4.4 0 8-3.6 8-8V307c0-4.4-3.6-8-8-8zm-356 1h-56c-4.4 0-8 3.6-8 8v406c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V308c0-4.4-3.6-8-8-8zM452 500.9H290.5c-4.4 0-8 3.6-8 8v43.7c0 4.4 3.6 8 8 8h94.9l-.3 8.9c-1.2 58.8-45.6 98.5-110.9 98.5c-76.2 0-123.9-59.7-123.9-156.7c0-95.8 46.8-155.2 121.5-155.2c54.8 0 93.1 26.9 108.5 75.4h76.2c-13.6-87.2-86-143.4-184.7-143.4C150 288 72 375.2 72 511.9C72 650.2 149.1 736 273 736c114.1 0 187-70.7 187-181.6v-45.5c0-4.4-3.6-8-8-8z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-align-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-align-left">
+    <path d="M15 12H3"/>
+    <path d="M17 18H3"/>
+    <path d="M21 6H3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-anchor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-anchor">
+    <path d="M12 22V8"/>
+    <path d="M5 12H2a10 10 0 0 0 20 0h-3"/>
+    <circle cx="12" cy="5" r="3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-chevron-down">
+    <path d="m6 9 6 6 6-6"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-chevron-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-chevron-left">
+    <path d="m15 18-6-6 6-6"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-chevron-right">
+    <path d="m9 18 6-6-6-6"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-chevron-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-chevron-up">
+    <path d="m18 15-6-6-6 6"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-chevrons-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-chevrons-down">
+    <path d="m7 6 5 5 5-5"/>
+    <path d="m7 13 5 5 5-5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-chevrons-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-chevrons-left">
+    <path d="m11 17-5-5 5-5"/>
+    <path d="m18 17-5-5 5-5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-chevrons-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-chevrons-right">
+    <path d="m6 17 5-5-5-5"/>
+    <path d="m13 17 5-5-5-5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-chevrons-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-chevrons-up">
+    <path d="m17 11-5-5-5 5"/>
+    <path d="m17 18-5-5-5 5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-asterisk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-asterisk">
+    <path d="M12 6v12"/>
+    <path d="M17.196 9 6.804 15"/>
+    <path d="m6.804 9 10.392 6"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-at-sign" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-at-sign">
+    <circle cx="12" cy="12" r="4"/>
+    <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-arrow-down">
+    <path d="M12 5v14"/>
+    <path d="m19 12-7 7-7-7"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-arrow-left">
+    <path d="m12 19-7-7 7-7"/>
+    <path d="M19 12H5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-arrow-left-from-line" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-arrow-left-from-line">
+    <path d="m9 6-6 6 6 6"/>
+    <path d="M3 12h14"/>
+    <path d="M21 19V5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-arrow-right-from-line" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-arrow-right-from-line">
+    <path d="M3 5v14"/>
+    <path d="M21 12H7"/>
+    <path d="m15 18 6-6-6-6"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-arrow-right">
+    <path d="M5 12h14"/>
+    <path d="m12 5 7 7-7 7"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-rotate-ccw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-rotate-ccw">
+    <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+    <path d="M3 3v5h5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-rotate-cw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-rotate-cw">
+    <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/>
+    <path d="M21 3v5h-5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-arrow-up">
+    <path d="m5 12 7-7 7 7"/>
+    <path d="M12 19V5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-refresh-ccw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-refresh-ccw">
+    <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+    <path d="M3 3v5h5"/>
+    <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/>
+    <path d="M16 16h5v5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-rewind" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-rewind">
+    <path d="M12 6a2 2 0 0 0-3.414-1.414l-6 6a2 2 0 0 0 0 2.828l6 6A2 2 0 0 0 12 18z"/>
+    <path d="M22 6a2 2 0 0 0-3.414-1.414l-6 6a2 2 0 0 0 0 2.828l6 6A2 2 0 0 0 22 18z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-skip-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-skip-back">
+    <path d="M17.971 4.285A2 2 0 0 1 21 6v12a2 2 0 0 1-3.029 1.715l-9.997-5.998a2 2 0 0 1-.003-3.432z"/>
+    <path d="M3 20V4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-step-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-step-back">
+    <path d="M13.971 4.285A2 2 0 0 1 17 6v12a2 2 0 0 1-3.029 1.715l-9.997-5.998a2 2 0 0 1-.003-3.432z"/>
+    <path d="M21 20V4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-ban" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-ban">
+    <path d="M4.929 4.929 19.07 19.071"/>
+    <circle cx="12" cy="12" r="10"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-menu">
+    <path d="M4 12h16"/>
+    <path d="M4 18h16"/>
+    <path d="M4 6h16"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-bed">
+    <path d="M2 4v16"/>
+    <path d="M2 8h18a2 2 0 0 1 2 2v10"/>
+    <path d="M2 17h20"/>
+    <path d="M6 8v9"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-bell">
+    <path d="M10.268 21a2 2 0 0 0 3.464 0"/>
+    <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-bell-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-bell-off">
+    <path d="M10.268 21a2 2 0 0 0 3.464 0"/>
+    <path d="M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742"/>
+    <path d="m2 2 20 20"/>
+    <path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-bell-dot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-bell-dot">
+    <path d="M10.268 21a2 2 0 0 0 3.464 0"/>
+    <path d="M11.68 2.009A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673c-.824-.85-1.678-1.731-2.21-3.348"/>
+    <circle cx="18" cy="5" r="3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-bell-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-bell-plus">
+    <path d="M10.268 21a2 2 0 0 0 3.464 0"/>
+    <path d="M15 8h6"/>
+    <path d="M18 5v6"/>
+    <path d="M20.002 14.464a9 9 0 0 0 .738.863A1 1 0 0 1 20 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 8.75-5.332"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-bell-ring" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-bell-ring">
+    <path d="M10.268 21a2 2 0 0 0 3.464 0"/>
+    <path d="M22 8c0-2.3-.8-4.3-2-6"/>
+    <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/>
+    <path d="M4 2C2.8 3.7 2 5.7 2 8"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-bold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-bold">
+    <path d="M6 12h9a4 4 0 0 1 0 8H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h7a4 4 0 0 1 0 8"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-book">
+    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-book-open-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-book-open-text">
+    <path d="M12 7v14"/>
+    <path d="M16 12h2"/>
+    <path d="M16 8h2"/>
+    <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/>
+    <path d="M6 12h2"/>
+    <path d="M6 8h2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-bookmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-bookmark">
+    <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-bookmark-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-bookmark-x">
+    <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"/>
+    <path d="m14.5 7.5-5 5"/>
+    <path d="m9.5 7.5 5 5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-archive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-archive">
+    <rect width="20" height="5" x="2" y="3" rx="1"/>
+    <path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"/>
+    <path d="M10 12h4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-briefcase">
+    <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+    <rect width="20" height="14" x="2" y="6" rx="2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-target">
+    <circle cx="12" cy="12" r="10"/>
+    <circle cx="12" cy="12" r="6"/>
+    <circle cx="12" cy="12" r="2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-calendar-days" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-calendar-days">
+    <path d="M8 2v4"/>
+    <path d="M16 2v4"/>
+    <rect width="18" height="18" x="3" y="4" rx="2"/>
+    <path d="M3 10h18"/>
+    <path d="M8 14h.01"/>
+    <path d="M12 14h.01"/>
+    <path d="M16 14h.01"/>
+    <path d="M8 18h.01"/>
+    <path d="M12 18h.01"/>
+    <path d="M16 18h.01"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-lock">
+    <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-award">
+    <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/>
+    <circle cx="12" cy="8" r="6"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-chart-bar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-chart-bar">
+    <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+    <path d="M7 16h8"/>
+    <path d="M7 11h12"/>
+    <path d="M7 6h3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-chart-pie" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-chart-pie">
+    <path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"/>
+    <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-check">
+    <path d="M20 6 9 17l-5-5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-check-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-check-check">
+    <path d="M18 6 7 17l-5-5"/>
+    <path d="m22 10-7.5 7.5L13 16"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-circle-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-circle-check">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="m9 12 2 2 4-4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-circle-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-circle-chevron-down">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="m16 10-4 4-4-4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-circle-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-circle-alert">
+    <circle cx="12" cy="12" r="10"/>
+    <line x1="12" x2="12" y1="8" y2="12"/>
+    <line x1="12" x2="12.01" y1="16" y2="16"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-info">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M12 16v-4"/>
+    <path d="M12 8h.01"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-circle-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-circle-minus">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M8 12h8"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-circle-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-circle-plus">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M8 12h8"/>
+    <path d="M12 8v8"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-circle-help" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-circle-help">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+    <path d="M12 17h.01"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-circle-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-circle-user">
+    <circle cx="12" cy="12" r="10"/>
+    <circle cx="12" cy="10" r="3"/>
+    <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-circle-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-circle-x">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="m15 9-6 6"/>
+    <path d="m9 9 6 6"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-clock">
+    <path d="M12 6v6l4 2"/>
+    <circle cx="12" cy="12" r="10"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-cloud-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-cloud-download">
+    <path d="M12 13v8l-4-4"/>
+    <path d="m12 21 4-4"/>
+    <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-cloud-upload" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-cloud-upload">
+    <path d="M12 13v8"/>
+    <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/>
+    <path d="m8 17 4-4 4 4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-code">
+    <path d="m16 18 6-6-6-6"/>
+    <path d="m8 6-6 6 6 6"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-message-square" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-message-square">
+    <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-minimize" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-minimize">
+    <path d="M8 3v3a2 2 0 0 1-2 2H3"/>
+    <path d="M21 8h-3a2 2 0 0 1-2-2V3"/>
+    <path d="M3 16h3a2 2 0 0 1 2 2v3"/>
+    <path d="M16 21v-3a2 2 0 0 1 2-2h3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-copy">
+    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-crosshair" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-crosshair">
+    <circle cx="12" cy="12" r="10"/>
+    <line x1="22" x2="18" y1="12" y2="12"/>
+    <line x1="6" x2="2" y1="12" y2="12"/>
+    <line x1="12" x2="12" y1="6" y2="2"/>
+    <line x1="12" x2="12" y1="22" y2="18"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-cuboid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-cuboid">
+    <path d="m21.12 6.4-6.05-4.06a2 2 0 0 0-2.17-.05L2.95 8.41a2 2 0 0 0-.95 1.7v5.82a2 2 0 0 0 .88 1.66l6.05 4.07a2 2 0 0 0 2.17.05l9.95-6.12a2 2 0 0 0 .95-1.7V8.06a2 2 0 0 0-.88-1.66Z"/>
+    <path d="M10 22v-8L2.25 9.15"/>
+    <path d="m10 14 11.77-6.87"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-monitor">
+    <rect width="20" height="14" x="2" y="3" rx="2"/>
+    <line x1="8" x2="16" y1="21" y2="21"/>
+    <line x1="12" x2="12" y1="17" y2="21"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-download">
+    <path d="M12 15V3"/>
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+    <path d="m7 10 5 5 5-5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-message-square-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-message-square-text">
+    <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/>
+    <path d="M7 11h10"/>
+    <path d="M7 15h6"/>
+    <path d="M7 7h8"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-heart">
+    <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-maximize" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-maximize">
+    <path d="M8 3H5a2 2 0 0 0-2 2v3"/>
+    <path d="M21 8V5a2 2 0 0 0-2-2h-3"/>
+    <path d="M3 16v3a2 2 0 0 0 2 2h3"/>
+    <path d="M16 21h3a2 2 0 0 0 2-2v-3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-grid-2x2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-grid-2x2">
+    <path d="M12 3v18"/>
+    <path d="M3 12h18"/>
+    <rect width="18" height="18" x="3" y="3" rx="2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-globe">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+    <path d="M2 12h20"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-ellipsis" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-ellipsis">
+    <circle cx="12" cy="12" r="1"/>
+    <circle cx="19" cy="12" r="1"/>
+    <circle cx="5" cy="12" r="1"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-ellipsis-vertical" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-ellipsis-vertical">
+    <circle cx="12" cy="12" r="1"/>
+    <circle cx="12" cy="5" r="1"/>
+    <circle cx="12" cy="19" r="1"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-mail">
+    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/>
+    <rect x="2" y="4" width="20" height="16" rx="2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-apple" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-apple">
+    <path d="M12 6.528V3a1 1 0 0 1 1-1h0"/>
+    <path d="M18.237 21A15 15 0 0 0 22 11a6 6 0 0 0-10-4.472A6 6 0 0 0 2 11a15.1 15.1 0 0 0 3.763 10 3 3 0 0 0 3.648.648 5.5 5.5 0 0 1 5.178 0A3 3 0 0 0 18.237 21"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-chromium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-chromium">
+    <path d="M10.88 21.94 15.46 14"/>
+    <path d="M21.17 8H12"/>
+    <path d="M3.95 6.06 8.54 14"/>
+    <circle cx="12" cy="12" r="10"/>
+    <circle cx="12" cy="12" r="4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-facebook">
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-github">
+    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+    <path d="M9 18c-4.51 2-5-2-7-2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-instagram">
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-linkedin">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+    <rect width="4" height="12" x="2" y="9"/>
+    <circle cx="4" cy="4" r="2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-twitter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-twitter">
+    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-smile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-smile">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+    <line x1="9" x2="9.01" y1="9" y2="9"/>
+    <line x1="15" x2="15.01" y1="9" y2="9"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-calendar-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-calendar-plus">
+    <path d="M16 19h6"/>
+    <path d="M16 2v4"/>
+    <path d="M19 16v6"/>
+    <path d="M21 12.598V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8.5"/>
+    <path d="M3 10h18"/>
+    <path d="M8 2v4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-circle">
+    <circle cx="12" cy="12" r="10"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-circle-dot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-circle-dot">
+    <circle cx="12" cy="12" r="10"/>
+    <circle cx="12" cy="12" r="1"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-clipboard">
+    <rect width="8" height="4" x="8" y="2" rx="1" ry="1"/>
+    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-messages-square" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-messages-square">
+    <path d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+    <path d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-copyright" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-copyright">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M14.83 14.83a4 4 0 1 1 0-5.66"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-eye">
+    <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/>
+    <circle cx="12" cy="12" r="3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-eye-off">
+    <path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"/>
+    <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"/>
+    <path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"/>
+    <path d="m2 2 20 20"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-frown" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-frown">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M16 16s-1.5-2-4-2-4 2-4 2"/>
+    <line x1="9" x2="9.01" y1="9" y2="9"/>
+    <line x1="15" x2="15.01" y1="9" y2="9"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-meh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-meh">
+    <circle cx="12" cy="12" r="10"/>
+    <line x1="8" x2="16" y1="15" y2="15"/>
+    <line x1="9" x2="9.01" y1="9" y2="9"/>
+    <line x1="15" x2="15.01" y1="9" y2="9"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-file-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-file-text">
+    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/>
+    <path d="M14 2v4a2 2 0 0 0 2 2h4"/>
+    <path d="M10 9H8"/>
+    <path d="M16 13H8"/>
+    <path d="M16 17H8"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-image">
+    <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
+    <circle cx="9" cy="9" r="2"/>
+    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-moon">
+    <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-square-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-square-check">
+    <rect width="18" height="18" x="3" y="3" rx="2"/>
+    <path d="m9 12 2 2 4-4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-star">
+    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-sun">
+    <circle cx="12" cy="12" r="4"/>
+    <path d="M12 2v2"/>
+    <path d="M12 20v2"/>
+    <path d="m4.93 4.93 1.41 1.41"/>
+    <path d="m17.66 17.66 1.41 1.41"/>
+    <path d="M2 12h2"/>
+    <path d="M20 12h2"/>
+    <path d="m6.34 17.66-1.41 1.41"/>
+    <path d="m19.07 4.93-1.41 1.41"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-sun-medium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-sun-medium">
+    <circle cx="12" cy="12" r="4"/>
+    <path d="M12 3v1"/>
+    <path d="M12 20v1"/>
+    <path d="M3 12h1"/>
+    <path d="M20 12h1"/>
+    <path d="m18.364 5.636-.707.707"/>
+    <path d="m6.343 17.657-.707.707"/>
+    <path d="m5.636 5.636.707.707"/>
+    <path d="m17.657 17.657.707.707"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-thumbs-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-thumbs-down">
+    <path d="M17 14V2"/>
+    <path d="M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88Z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-thumbs-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-thumbs-up">
+    <path d="M7 10v12"/>
+    <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-trash">
+    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/>
+    <path d="M3 6h18"/>
+    <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-file">
+    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/>
+    <path d="M14 2v4a2 2 0 0 0 2 2h4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-funnel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-funnel">
+    <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-flag">
+    <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-flask-conical" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-flask-conical">
+    <path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2"/>
+    <path d="M6.453 15h11.094"/>
+    <path d="M8.5 2h7"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-folder">
+    <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-folder-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-folder-open">
+    <path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-type" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-type">
+    <path d="M12 4v16"/>
+    <path d="M4 7V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2"/>
+    <path d="M9 20h6"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-skip-forward" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-skip-forward">
+    <path d="M21 4v16"/>
+    <path d="M6.029 4.285A2 2 0 0 0 3 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-fast-forward" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-fast-forward">
+    <path d="M12 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 12 18z"/>
+    <path d="M2 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 2 18z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-step-forward" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-step-forward">
+    <path d="M10.029 4.285A2 2 0 0 0 7 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z"/>
+    <path d="M3 4v16"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-gavel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-gavel">
+    <path d="m14 13-8.381 8.38a1 1 0 0 1-3.001-3l8.384-8.381"/>
+    <path d="m16 16 6-6"/>
+    <path d="m21.5 10.5-8-8"/>
+    <path d="m8 8 6-6"/>
+    <path d="m8.5 7.5 8 8"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-settings">
+    <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/>
+    <circle cx="12" cy="12" r="3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-gift">
+    <rect x="3" y="8" width="18" height="4" rx="1"/>
+    <path d="M12 8v13"/>
+    <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/>
+    <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-grip-horizontal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-grip-horizontal">
+    <circle cx="12" cy="9" r="1"/>
+    <circle cx="19" cy="9" r="1"/>
+    <circle cx="5" cy="9" r="1"/>
+    <circle cx="12" cy="15" r="1"/>
+    <circle cx="19" cy="15" r="1"/>
+    <circle cx="5" cy="15" r="1"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-handshake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-handshake">
+    <path d="m11 17 2 2a1 1 0 1 0 3-3"/>
+    <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/>
+    <path d="m21 3 1 11h-2"/>
+    <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/>
+    <path d="M3 4h8"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-hash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-hash">
+    <line x1="4" x2="20" y1="9" y2="9"/>
+    <line x1="4" x2="20" y1="15" y2="15"/>
+    <line x1="10" x2="8" y1="3" y2="21"/>
+    <line x1="16" x2="14" y1="3" y2="21"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-hourglass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-hourglass">
+    <path d="M5 22h14"/>
+    <path d="M5 2h14"/>
+    <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/>
+    <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-house" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-house">
+    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/>
+    <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-id-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-id-card">
+    <path d="M16 10h2"/>
+    <path d="M16 14h2"/>
+    <path d="M6.17 15a3 3 0 0 1 5.66 0"/>
+    <circle cx="9" cy="11" r="2"/>
+    <rect width="20" height="14" x="2" y="5" rx="2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-images" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-images">
+    <path d="m22 11-1.296-1.296a2.4 2.4 0 0 0-3.408 0L11 16"/>
+    <path d="M4 8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2"/>
+    <circle cx="13" cy="7" r="1" fill="currentColor"/>
+    <rect width="12" height="12" x="8" y="2" rx="2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-inbox" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-inbox">
+    <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/>
+    <path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-italic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-italic">
+    <line x1="19" x2="10" y1="4" y2="4"/>
+    <line x1="14" x2="5" y1="20" y2="20"/>
+    <line x1="15" x2="9" y1="4" y2="20"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-key">
+    <path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4"/>
+    <path d="m21 2-9.6 9.6"/>
+    <circle cx="7.5" cy="15.5" r="5.5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-keyboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-keyboard">
+    <path d="M10 8h.01"/>
+    <path d="M12 12h.01"/>
+    <path d="M14 8h.01"/>
+    <path d="M16 12h.01"/>
+    <path d="M18 8h.01"/>
+    <path d="M6 8h.01"/>
+    <path d="M7 16h10"/>
+    <path d="M8 12h.01"/>
+    <rect width="20" height="16" x="2" y="4" rx="2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-languages" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-languages">
+    <path d="m5 8 6 6"/>
+    <path d="m4 14 6-6 2-3"/>
+    <path d="M2 5h12"/>
+    <path d="M7 2h1"/>
+    <path d="m22 22-5-10-5 10"/>
+    <path d="M14 18h6"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-layers">
+    <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/>
+    <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/>
+    <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-arrow-left-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-arrow-left-right">
+    <path d="M8 3 4 7l4 4"/>
+    <path d="M4 7h16"/>
+    <path d="m16 21 4-4-4-4"/>
+    <path d="M20 17H4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-link-2-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-link-2-off">
+    <path d="M9 17H7A5 5 0 0 1 7 7"/>
+    <path d="M15 7h2a5 5 0 0 1 4 8"/>
+    <line x1="8" x2="12" y1="12" y2="12"/>
+    <line x1="2" x2="22" y1="2" y2="22"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-list">
+    <path d="M3 5h.01"/>
+    <path d="M3 12h.01"/>
+    <path d="M3 19h.01"/>
+    <path d="M8 5h13"/>
+    <path d="M8 12h13"/>
+    <path d="M8 19h13"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-list-check">
+    <path d="M11 18H3"/>
+    <path d="m15 18 2 2 4-4"/>
+    <path d="M16 12H3"/>
+    <path d="M16 6H3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-list-ordered" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-list-ordered">
+    <path d="M10 12h11"/>
+    <path d="M10 18h11"/>
+    <path d="M10 6h11"/>
+    <path d="M4 10h2"/>
+    <path d="M4 6h1v4"/>
+    <path d="M6 18H4c0-1 2-2 2-3s-1-1.5-2-1"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-map-pin">
+    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+    <circle cx="12" cy="10" r="3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-search">
+    <path d="m21 21-4.34-4.34"/>
+    <circle cx="11" cy="11" r="8"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-zoom-out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-zoom-out">
+    <circle cx="11" cy="11" r="8"/>
+    <line x1="21" x2="16.65" y1="21" y2="16.65"/>
+    <line x1="8" x2="14" y1="11" y2="11"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-zoom-in" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-zoom-in">
+    <circle cx="11" cy="11" r="8"/>
+    <line x1="21" x2="16.65" y1="21" y2="16.65"/>
+    <line x1="11" x2="11" y1="8" y2="14"/>
+    <line x1="8" x2="14" y1="11" y2="11"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-minus">
+    <path d="M5 12h14"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-smartphone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-smartphone">
+    <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+    <path d="M12 18h.01"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-pen">
+    <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-users">
+    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+    <path d="M16 3.128a4 4 0 0 1 0 7.744"/>
+    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+    <circle cx="9" cy="7" r="4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-user-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-user-plus">
+    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+    <circle cx="9" cy="7" r="4"/>
+    <line x1="19" x2="19" y1="8" y2="14"/>
+    <line x1="22" x2="16" y1="11" y2="11"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-reply" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-reply">
+    <path d="M20 18v-2a4 4 0 0 0-4-4H4"/>
+    <path d="m9 17-5-5 5-5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-plus">
+    <path d="M5 12h14"/>
+    <path d="M12 5v14"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-quote" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-quote">
+    <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+    <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-move" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-move">
+    <path d="M12 2v20"/>
+    <path d="m15 19-3 3-3-3"/>
+    <path d="m19 9 3 3-3 3"/>
+    <path d="M2 12h20"/>
+    <path d="m5 9-3 3 3 3"/>
+    <path d="m9 5 3-3 3 3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-user-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-user-check">
+    <path d="m16 11 2 2 4-4"/>
+    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+    <circle cx="9" cy="7" r="4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-send">
+    <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/>
+    <path d="m21.854 2.147-10.94 10.939"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-paintbrush" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-paintbrush">
+    <path d="m14.622 17.897-10.68-2.913"/>
+    <path d="M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z"/>
+    <path d="M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-palette">
+    <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"/>
+    <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/>
+    <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/>
+    <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/>
+    <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-pause" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-pause">
+    <rect width="4" height="16" x="14" y="3" rx="1"/>
+    <rect width="4" height="16" x="5" y="3" rx="1"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-pencil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-pencil">
+    <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/>
+    <path d="m15 5 4 4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-play">
+    <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-plug">
+    <path d="M12 22v-5"/>
+    <path d="M9 8V2"/>
+    <path d="M15 8V2"/>
+    <path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-power-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-power-off">
+    <path d="M18.36 6.64A9 9 0 0 1 20.77 15"/>
+    <path d="M6.16 6.16a9 9 0 1 0 12.68 12.68"/>
+    <path d="M12 2v4"/>
+    <path d="m2 2 20 20"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-puzzle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-puzzle">
+    <path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-log-out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-log-out">
+    <path d="m16 17 5-5-5-5"/>
+    <path d="M21 12H9"/>
+    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-log-in" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-log-in">
+    <path d="m10 17 5-5-5-5"/>
+    <path d="M15 12H3"/>
+    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-bot">
+    <path d="M12 8V4H8"/>
+    <rect width="16" height="12" x="4" y="8" rx="2"/>
+    <path d="M2 14h2"/>
+    <path d="M20 14h2"/>
+    <path d="M15 13v2"/>
+    <path d="M9 13v2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-rocket">
+    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+    <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-scroll" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-scroll">
+    <path d="M19 17V5a2 2 0 0 0-2-2H4"/>
+    <path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-share">
+    <path d="M12 2v13"/>
+    <path d="m16 6-4-4-4 4"/>
+    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-shield-half" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-shield-half">
+    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+    <path d="M12 22V2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-shuffle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-shuffle">
+    <path d="m18 14 4 4-4 4"/>
+    <path d="m18 2 4 4-4 4"/>
+    <path d="M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-8.6a4 4 0 0 1 3.3-1.7H22"/>
+    <path d="M2 6h1.972a4 4 0 0 1 3.6 2.2"/>
+    <path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-signal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-signal">
+    <path d="M2 20h.01"/>
+    <path d="M7 20v-4"/>
+    <path d="M12 20v-8"/>
+    <path d="M17 20V8"/>
+    <path d="M22 4v16"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-sliders-horizontal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-sliders-horizontal">
+    <line x1="21" x2="14" y1="4" y2="4"/>
+    <line x1="10" x2="3" y1="4" y2="4"/>
+    <line x1="21" x2="12" y1="12" y2="12"/>
+    <line x1="8" x2="3" y1="12" y2="12"/>
+    <line x1="21" x2="16" y1="20" y2="20"/>
+    <line x1="12" x2="3" y1="20" y2="20"/>
+    <line x1="14" x2="14" y1="2" y2="6"/>
+    <line x1="8" x2="8" y1="10" y2="14"/>
+    <line x1="16" x2="16" y1="18" y2="22"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-loader" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-loader">
+    <path d="M12 2v4"/>
+    <path d="m16.2 7.8 2.9-2.9"/>
+    <path d="M18 12h4"/>
+    <path d="m16.2 16.2 2.9 2.9"/>
+    <path d="M12 18v4"/>
+    <path d="m4.9 19.1 2.9-2.9"/>
+    <path d="M2 12h4"/>
+    <path d="m4.9 4.9 2.9 2.9"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-square-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-square-plus">
+    <rect width="18" height="18" x="3" y="3" rx="2"/>
+    <path d="M8 12h8"/>
+    <path d="M12 8v8"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-table" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-table">
+    <path d="M12 3v18"/>
+    <rect width="18" height="18" x="3" y="3" rx="2"/>
+    <path d="M3 9h18"/>
+    <path d="M3 15h18"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-tag">
+    <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/>
+    <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-tags" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-tags">
+    <path d="M13.172 2a2 2 0 0 1 1.414.586l6.71 6.71a2.4 2.4 0 0 1 0 3.408l-4.592 4.592a2.4 2.4 0 0 1-3.408 0l-6.71-6.71A2 2 0 0 1 6 9.172V3a1 1 0 0 1 1-1z"/>
+    <path d="M2 7v6.172a2 2 0 0 0 .586 1.414l6.71 6.71a2.4 2.4 0 0 0 3.191.193"/>
+    <circle cx="10.5" cy="6.5" r=".5" fill="currentColor"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-thermometer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-thermometer">
+    <path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-pin">
+    <path d="M12 17v5"/>
+    <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-toggle-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-toggle-left">
+    <circle cx="9" cy="12" r="3"/>
+    <rect width="20" height="14" x="2" y="5" rx="7"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-toggle-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-toggle-right">
+    <circle cx="15" cy="12" r="3"/>
+    <rect width="20" height="14" x="2" y="5" rx="7"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-triangle-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-triangle-alert">
+    <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/>
+    <path d="M12 9v4"/>
+    <path d="M12 17h.01"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-ambulance" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-ambulance">
+    <path d="M10 10H6"/>
+    <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
+    <path d="M19 18h2a1 1 0 0 0 1-1v-3.28a1 1 0 0 0-.684-.948l-1.923-.641a1 1 0 0 1-.578-.502l-1.539-3.076A1 1 0 0 0 16.382 8H14"/>
+    <path d="M8 8v4"/>
+    <path d="M9 18h6"/>
+    <circle cx="17" cy="18" r="2"/>
+    <circle cx="7" cy="18" r="2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-lock-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-lock-open">
+    <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+    <path d="M7 11V7a5 5 0 0 1 9.9-1"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-lock-keyhole-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-lock-keyhole-open">
+    <circle cx="12" cy="16" r="1"/>
+    <rect width="18" height="12" x="3" y="10" rx="2"/>
+    <path d="M7 10V7a5 5 0 0 1 9.33-2.5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-arrow-up-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-arrow-up-down">
+    <path d="m21 16-4 4-4-4"/>
+    <path d="M17 20V4"/>
+    <path d="m3 8 4-4 4 4"/>
+    <path d="M7 4v16"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-external-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-external-link">
+    <path d="M15 3h6v6"/>
+    <path d="M10 14 21 3"/>
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-upload" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-upload">
+    <path d="M12 3v12"/>
+    <path d="m17 8-5-5-5 5"/>
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-user">
+    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+    <circle cx="12" cy="7" r="4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-user-cog" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-user-cog">
+    <path d="M10 15H6a4 4 0 0 0-4 4v2"/>
+    <path d="m14.305 16.53.923-.382"/>
+    <path d="m15.228 13.852-.923-.383"/>
+    <path d="m16.852 12.228-.383-.923"/>
+    <path d="m16.852 17.772-.383.924"/>
+    <path d="m19.148 12.228.383-.923"/>
+    <path d="m19.53 18.696-.382-.924"/>
+    <path d="m20.772 13.852.924-.383"/>
+    <path d="m20.772 16.148.924.383"/>
+    <circle cx="18" cy="15" r="3"/>
+    <circle cx="9" cy="7" r="4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-user-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-user-pen">
+    <path d="M11.5 15H7a4 4 0 0 0-4 4v2"/>
+    <path d="M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/>
+    <circle cx="10" cy="7" r="4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-user-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-user-x">
+    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+    <circle cx="9" cy="7" r="4"/>
+    <line x1="17" x2="22" y1="8" y2="13"/>
+    <line x1="22" x2="17" y1="8" y2="13"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-sparkles">
+    <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/>
+    <path d="M20 2v4"/>
+    <path d="M22 4h-4"/>
+    <circle cx="4" cy="20" r="2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-wand-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-wand-sparkles">
+    <path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"/>
+    <path d="m14 7 3 3"/>
+    <path d="M5 6v4"/>
+    <path d="M19 14v4"/>
+    <path d="M10 2v2"/>
+    <path d="M7 8H3"/>
+    <path d="M21 16h-4"/>
+    <path d="M11 3H9"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-wrench">
+    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-x">
+    <path d="M18 6 6 18"/>
+    <path d="m6 6 12 12"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-angry" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-angry">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M16 16s-1.5-2-4-2-4 2-4 2"/>
+    <path d="M7.5 8 10 9"/>
+    <path d="m14 9 2.5-1"/>
+    <path d="M9 10h.01"/>
+    <path d="M15 10h.01"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-book-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-book-user">
+    <path d="M15 13a3 3 0 1 0-6 0"/>
+    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/>
+    <circle cx="12" cy="8" r="2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-boxes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-boxes">
+    <path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"/>
+    <path d="m7 16.5-4.74-2.85"/>
+    <path d="m7 16.5 5-3"/>
+    <path d="M7 16.5v5.17"/>
+    <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"/>
+    <path d="m17 16.5-5-3"/>
+    <path d="m17 16.5 4.74-2.85"/>
+    <path d="M17 16.5v5.17"/>
+    <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"/>
+    <path d="M12 8 7.26 5.15"/>
+    <path d="m12 8 4.74-2.85"/>
+    <path d="M12 13.5V8"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-cake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-cake">
+    <path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/>
+    <path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"/>
+    <path d="M2 21h20"/>
+    <path d="M7 8v3"/>
+    <path d="M12 8v3"/>
+    <path d="M17 8v3"/>
+    <path d="M7 4h.01"/>
+    <path d="M12 4h.01"/>
+    <path d="M17 4h.01"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-circle-stop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-circle-stop">
+    <circle cx="12" cy="12" r="10"/>
+    <rect x="9" y="9" width="6" height="6" rx="1"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-columns-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-columns-2">
+    <rect width="18" height="18" x="3" y="3" rx="2"/>
+    <path d="M12 3v18"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-crown" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-crown">
+    <path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/>
+    <path d="M5 21h14"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-file-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-file-image">
+    <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/>
+    <path d="M14 2v5a1 1 0 0 0 1 1h5"/>
+    <circle cx="10" cy="12" r="2"/>
+    <path d="m20 17-1.296-1.296a2.41 2.41 0 0 0-3.408 0L9 22"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-file-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-file-pen">
+    <path d="M12.659 22H18a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v9.34"/>
+    <path d="M14 2v5a1 1 0 0 0 1 1h5"/>
+    <path d="M10.378 12.622a1 1 0 0 1 3 3.003L8.36 20.637a2 2 0 0 1-.854.506l-2.867.837a.5.5 0 0 1-.62-.62l.836-2.869a2 2 0 0 1 .506-.853z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-file-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-file-up">
+    <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/>
+    <path d="M14 2v5a1 1 0 0 0 1 1h5"/>
+    <path d="M12 12v6"/>
+    <path d="m15 15-3-3-3 3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-file-volume" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-file-volume">
+    <path d="M4 11.55V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2h-1.95"/>
+    <path d="M14 2v5a1 1 0 0 0 1 1h5"/>
+    <path d="M12 15a5 5 0 0 1 0 6"/>
+    <path d="M8 14.502a.5.5 0 0 0-.826-.381l-1.893 1.631a1 1 0 0 1-.651.243H3.5a.5.5 0 0 0-.5.501v3.006a.5.5 0 0 0 .5.501h1.129a1 1 0 0 1 .652.243l1.893 1.633a.5.5 0 0 0 .826-.38z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-funnel-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-funnel-x">
+    <path d="M12.531 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14v6a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341l.427-.473"/>
+    <path d="m16.5 3.5 5 5"/>
+    <path d="m21.5 3.5-5 5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-graduation-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-graduation-cap">
+    <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+    <path d="M22 10v6"/>
+    <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-grid-3x3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-grid-3x3">
+    <rect width="18" height="18" x="3" y="3" rx="2"/>
+    <path d="M3 9h18"/>
+    <path d="M3 15h18"/>
+    <path d="M9 3v18"/>
+    <path d="M15 3v18"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-hand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-hand">
+    <path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/>
+    <path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/>
+    <path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/>
+    <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-hat-glasses" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-hat-glasses">
+    <path d="M14 18a2 2 0 0 0-4 0"/>
+    <path d="m19 11-2.11-6.657a2 2 0 0 0-2.752-1.148l-1.276.61A2 2 0 0 1 12 4H8.5a2 2 0 0 0-1.925 1.456L5 11"/>
+    <path d="M2 11h20"/>
+    <circle cx="17" cy="18" r="3"/>
+    <circle cx="7" cy="18" r="3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-message-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-message-circle">
+    <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-message-circle-more" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-message-circle-more">
+    <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/>
+    <path d="M8 12h.01"/>
+    <path d="M12 12h.01"/>
+    <path d="M16 12h.01"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-message-circle-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-message-circle-off">
+    <path d="m2 2 20 20"/>
+    <path d="M4.93 4.929a10 10 0 0 0-1.938 11.412 2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 0 0 11.302-1.989"/>
+    <path d="M8.35 2.69A10 10 0 0 1 21.3 15.65"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-pipette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-pipette">
+    <path d="m12 9-8.414 8.414A2 2 0 0 0 3 18.828v1.344a2 2 0 0 1-.586 1.414A2 2 0 0 1 3.828 21h1.344a2 2 0 0 0 1.414-.586L15 12"/>
+    <path d="m18 9 .4.4a1 1 0 1 1-3 3l-3.8-3.8a1 1 0 1 1 3-3l.4.4 3.4-3.4a1 1 0 1 1 3 3z"/>
+    <path d="m2 22 .414-.414"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-rss" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-rss">
+    <path d="M4 11a9 9 0 0 1 9 9"/>
+    <path d="M4 4a16 16 0 0 1 16 16"/>
+    <circle cx="5" cy="19" r="1"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-save" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-save">
+    <path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+    <path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"/>
+    <path d="M7 3v4a1 1 0 0 0 1 1h7"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-share-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-share-2">
+    <circle cx="18" cy="5" r="3"/>
+    <circle cx="6" cy="12" r="3"/>
+    <circle cx="18" cy="19" r="3"/>
+    <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/>
+    <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-stamp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-stamp">
+    <path d="M14 13V8.5C14 7 15 7 15 5a3 3 0 0 0-6 0c0 2 1 2 1 3.5V13"/>
+    <path d="M20 15.5a2.5 2.5 0 0 0-2.5-2.5h-11A2.5 2.5 0 0 0 4 15.5V17a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1z"/>
+    <path d="M5 22h14"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-trophy">
+    <path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/>
+    <path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/>
+    <path d="M18 9h1.5a1 1 0 0 0 0-5H18"/>
+    <path d="M4 22h16"/>
+    <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/>
+    <path d="M6 9H4.5a1 1 0 0 1 0-5H6"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-vote" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-vote">
+    <path d="m9 12 2 2 4-4"/>
+    <path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z"/>
+    <path d="M22 19H2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-workflow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-workflow">
+    <rect width="8" height="8" x="3" y="3" rx="2"/>
+    <path d="M7 11v4a2 2 0 0 0 2 2h4"/>
+    <rect width="8" height="8" x="13" y="13" rx="2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-repeat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-repeat">
+    <path d="m17 2 4 4-4 4"/>
+    <path d="M3 11v-1a4 4 0 0 1 4-4h14"/>
+    <path d="m7 22-4-4 4-4"/>
+    <path d="M21 13v1a4 4 0 0 1-4 4H3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-chart-column" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-chart-column">
+    <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+    <path d="M18 17V9"/>
+    <path d="M13 17V5"/>
+    <path d="M8 17v-3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-chart-line" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-chart-line">
+    <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+    <path d="m19 9-5 5-4-4-3 3"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-file-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-file-video">
+    <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/>
+    <path d="M14 2v5a1 1 0 0 0 1 1h5"/>
+    <path d="M15.033 13.44a.647.647 0 0 1 0 1.12l-4.065 2.352a.645.645 0 0 1-.968-.56v-4.704a.645.645 0 0 1 .967-.56z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-headset" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-headset">
+    <path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/>
+    <path d="M21 16v2a4 4 0 0 1-4 4h-5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-medal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-medal">
+    <path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"/>
+    <path d="M11 12 5.12 2.2"/>
+    <path d="m13 12 5.88-9.8"/>
+    <path d="M8 7h8"/>
+    <circle cx="12" cy="17" r="5"/>
+    <path d="M12 18v-2h-.5"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-mic-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-mic-off">
+    <path d="M12 19v3"/>
+    <path d="M15 9.34V5a3 3 0 0 0-5.68-1.33"/>
+    <path d="M16.95 16.95A7 7 0 0 1 5 12v-2"/>
+    <path d="M18.89 13.23A7 7 0 0 0 19 12v-2"/>
+    <path d="m2 2 20 20"/>
+    <path d="M9 9v3a3 3 0 0 0 5.12 2.12"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-shield-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-shield-user">
+    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+    <path d="M6.376 18.91a6 6 0 0 1 11.249.003"/>
+    <circle cx="12" cy="11" r="4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-spell-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-spell-check">
+    <path d="m6 16 6-12 6 12"/>
+    <path d="M8 12h8"/>
+    <path d="m16 20 2 2 4-4"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-square" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-square">
+    <rect width="18" height="18" x="3" y="3" rx="2"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-square-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-square-pen">
+    <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+    <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-volume-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-volume-2">
+    <path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/>
+    <path d="M16 9a5 5 0 0 1 0 6"/>
+    <path d="M19.364 18.364a9 9 0 0 0 0-12.728"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-volume-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-volume-x">
+    <path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/>
+    <line x1="22" x2="16" y1="9" y2="15"/>
+    <line x1="16" x2="22" y1="9" y2="15"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-circle-question-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-circle-question-mark">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+    <path d="M12 17h.01"/>
+  </symbol>
+  <symbol stroke-width="var(--lucide-icons-stroke-width)" class="lucide lucide-credit-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="lc-credit-card">
+    <rect width="20" height="14" x="2" y="5" rx="2"/>
+    <line x1="2" x2="22" y1="10" y2="10"/>
   </symbol>
 </svg>
