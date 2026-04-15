@@ -4,10 +4,9 @@
 
 1. [data.js](https://github.com/discourse/discourse/blob/main/frontend/pretty-text/addon/emoji/data.js) is the emoji canonical names, aliases, toning, mappings etc.
 2. [emojis.json](https://meta.discourse.org/emojis.json) is the API result from site.
-3. [ios-emojis-by-line.txt](./ios-emojis-by-line.txt) is my attempt to separate ios line by line.
 
 ## Icons
-1. [sprite-meta.xml](https://meta.discourse.org/svg-sprite/meta.discourse.org/svg-331-65535d75fc984156c33bf043d0a3bf3e47547b54.js) is loaded in first into `window.__svg_sprite`. Retrievable from  site `Doc` in chrome inspector (F12) `meta` "data-discourse-setup" tag. The path is subject to change.
+1. [sprite.xml](https://meta.discourse.org/svg-sprite/meta.discourse.org/svg-331-65535d75fc984156c33bf043d0a3bf3e47547b54.js) is loaded in first into `window.__svg_sprite`. Retrievable from  site `Doc` in chrome inspector (F12) `meta` "data-discourse-setup" tag. The path is subject to change.
 
 ```html
 <meta id="data-discourse-setup"
@@ -29,5 +28,3 @@
     data-s3-cdn="https://d11a6trkgmumsb.cloudfront.net"
     data-s3-base-url="//assets-meta-cdck-prod-meta.s3.dualstack.us-west-1.amazonaws.com">
 ```
-
-2. [sprite-dbc.xml](./sprite-dbc.xml) site specific, to [forum.dirtbikechina.com](https://forum.dirtbikechina.com/).

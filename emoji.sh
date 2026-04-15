@@ -1,22 +1,9 @@
 #!/usr/bin/env bash
 
-
 set -euo pipefail
 cd "$(dirname "$0")"
 
-
-# ---------------------------------------------------------------------------
-# Parse arguments
-# ---------------------------------------------------------------------------
-LEGACY=false
-while [[ $# -gt 0 ]]; do
-    case "$1" in
-        --legacy) LEGACY=true; shift ;;
-        *) echo "Unknown option: $1" >&2; exit 1 ;;
-    esac
-done
-
-FORUM_URL="https://forum.dirtbikechina.com"
+FORUM_URL="${FORUM_URL:-https://meta.discourse.org}"
 KIT_DIR="../Sources/DiscourseAssetKit"
 DATA_JS_URL="https://raw.githubusercontent.com/discourse/discourse/main/frontend/pretty-text/addon/emoji/data.js"
 
@@ -24,69 +11,65 @@ DATA_JS_URL="https://raw.githubusercontent.com/discourse/discourse/main/frontend
 # ---------------------------------------------------------------------------
 # Step 0: Download source data files
 # ---------------------------------------------------------------------------
+echo ""
 echo "=== Step 0: Download source data files ==="
 curl -fsSL "$FORUM_URL/emojis.json" | uv run python -m json.tool --indent 4 --no-ensure-ascii > assets/emojis.json
-curl -fsSL $DATA_JS_URL -o assets/data.js
+curl -fsSL "$DATA_JS_URL" -o assets/data.js
 
 
 # ---------------------------------------------------------------------------
-# Step 1: Download emoji images & generate Swift enum
-#   Default: flat PNGs to assets/emojis/Emojis/
-#   --legacy: xcassets to assets/emojis/DiscourseEmojis.xcassets/
+# Step 0.5: Warm staging from the committed package (fresh-clone shortcut)
+#   rsync without a trailing slash on the source copies Emojis/ itself into
+#   assets/emojis/, turning Step 1's full download into a no-op.
 # ---------------------------------------------------------------------------
-LEGACY_FLAG=""
-if $LEGACY; then
-    echo "=== Step 1: Download emoji images (legacy xcassets) ==="
-    LEGACY_FLAG="--legacy"
-else
-    echo "=== Step 1: Download emoji images (flat PNGs) ==="
+if [ ! -d assets/emojis/Emojis ] && [ -d "$KIT_DIR/Resources/Emojis" ]; then
+    echo ""
+    echo "=== Step 0.5: Seed staging from package Resources ==="
+    mkdir -p assets/emojis
+    rsync -ah "$KIT_DIR/Resources/Emojis" assets/emojis/
 fi
 
-uv run \
-    python discourse_emojis.py \
+
+# ---------------------------------------------------------------------------
+# Step 1: Download emoji PNGs & generate Swift enum
+# ---------------------------------------------------------------------------
+echo ""
+echo "=== Step 1: Download emoji images ==="
+uv run python -m src.emoji.download \
     --json assets/emojis.json \
     --out assets/emojis \
     --base-url "$FORUM_URL" \
     --download \
     --incremental \
     --swift "$KIT_DIR/Emoji/Generated/DiscourseEmoji.swift" \
-    --enum-name DiscourseEmoji \
-    $LEGACY_FLAG
+    --enum-name DiscourseEmoji
 
 
 # ---------------------------------------------------------------------------
-# Step 2: Copy assets into the Swift package
+# Step 2: Copy flat PNGs into the Swift package
 # ---------------------------------------------------------------------------
-if $LEGACY; then
-    echo "=== Step 2: rsync xcassets (legacy) ==="
-    rsync -aEc assets/emojis/DiscourseEmojis.xcassets/ "$KIT_DIR/Resources/DiscourseEmojis.xcassets/"
-else
-    echo "=== Step 2: Copy flat PNGs ==="
-    rm -rf "$KIT_DIR/Resources/Emojis"
-    cp -R assets/emojis/Emojis "$KIT_DIR/Resources/Emojis"
-fi
+echo ""
+echo "=== Step 2: Copy flat PNGs ==="
+rm -rf "$KIT_DIR/Resources/Emojis"
+cp -R assets/emojis/Emojis "$KIT_DIR/Resources/Emojis"
 
 
 # ---------------------------------------------------------------------------
-# Step 3: Generate lookup tables from Discourse data.js
-#   - EmojiAliasTable.swift    (alias -> canonical name, ~770 entries)
-#   - EmojiReplacementTable.swift (Unicode char -> shortcode, ~3400 entries)
-#   - EmojiToneTable.swift     (tonable emoji set, ~300 entries)
+# Step 3: Generate lookup tables (aliases, replacements, tones)
 # ---------------------------------------------------------------------------
-echo "=== Step 3: Generate lookup tables (aliases, replacements, tones) ==="
-uv run \
-    python generate_emoji_lookups.py \
+echo ""
+echo "=== Step 3: Generate lookup tables ==="
+uv run python -m src.emoji.lookups \
     --datajs assets/data.js \
     --out-dir "$KIT_DIR/Emoji/Generated"
 
 
 # ---------------------------------------------------------------------------
-# Step 4: Generate static emoji item table (replaces runtime JSON parsing)
-#   - EmojiItemTable.swift  (pre-computed EmojiItem data, ~2000 entries)
+# Step 4: Generate static emoji item table
 # ---------------------------------------------------------------------------
+echo ""
 echo "=== Step 4: Generate static emoji item table ==="
-uv run \
-    python generate_emoji_items.py \
+uv run python -m src.emoji.items \
     --json assets/emojis.json \
     --datajs assets/data.js \
     --enum-file "$KIT_DIR/Emoji/Generated/DiscourseEmoji.swift" \
@@ -95,11 +78,7 @@ uv run \
 
 echo ""
 echo "=== Done ==="
-if $LEGACY; then
-    echo "  xcassets:  $KIT_DIR/Resources/DiscourseEmojis.xcassets/"
-else
-    echo "  emojis:    $KIT_DIR/Resources/Emojis/"
-fi
+echo "  emojis:    $KIT_DIR/Resources/Emojis/"
 echo "  enum:      $KIT_DIR/Emoji/Generated/DiscourseEmoji.swift"
 echo "  aliases:   $KIT_DIR/Emoji/Generated/EmojiAliasTable.swift"
 echo "  replace:   $KIT_DIR/Emoji/Generated/EmojiReplacementTable.swift"
