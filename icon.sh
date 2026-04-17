@@ -27,7 +27,8 @@ uv run --with cairosvg python -m src.icon.generate \
     --xcassets "$KIT_DIR/Resources/DiscourseIcons.xcassets" \
     --swift "$KIT_DIR/Icon/Generated/DiscourseIcon.swift" \
     --enum-name DiscourseIcon \
-    --incremental
+    --incremental \
+    --orphans merge
 
 
 echo ""

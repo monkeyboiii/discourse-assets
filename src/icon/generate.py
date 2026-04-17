@@ -68,7 +68,11 @@ def main(argv: list[str] | None = None) -> int:
                     help="Regex to include only matching symbol ids")
     ap.add_argument("--incremental", action="store_true",
                     help="With --xcassets: skip icons whose imageset/pdf already "
-                         "exist at the destination; delete orphan imagesets.")
+                         "exist at the destination.")
+    ap.add_argument("--orphans", choices=["merge", "delete"], default="merge",
+                    help="With --xcassets: 'merge' keeps existing imagesets not "
+                         "in the current sprite; 'delete' removes them. "
+                         "Default: merge.")
     args = ap.parse_args(argv)
 
     in_path = Path(args.input).expanduser().resolve()
@@ -107,8 +111,9 @@ def main(argv: list[str] | None = None) -> int:
         ensure_xcassets_root(xcassets_dir)
         for sid, pdf_path in symbol_to_pdf.items():
             write_imageset(xcassets_dir, safe_asset_name(sid), pdf_path)
-        expected = {safe_asset_name(ic.symbol_id) for ic in icons}
-        deleted = delete_orphan_imagesets(xcassets_dir, expected)
+        if args.orphans == "delete":
+            expected = {safe_asset_name(ic.symbol_id) for ic in icons}
+            deleted = delete_orphan_imagesets(xcassets_dir, expected)
 
     if args.swift:
         swift_path = Path(args.swift).expanduser().resolve()
