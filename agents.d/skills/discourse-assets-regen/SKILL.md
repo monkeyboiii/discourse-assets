@@ -23,7 +23,7 @@ Read `agents.d/memory/MEMORY.md` first. All three facts apply to this loop.
 
 ## Steps
 
-1. Run the generator from this directory (source: `agents.d/modules/ASSET_PIPELINE.md § Usage`):
+1. Run the generator from this directory (source: `agents.d/modules/asset-pipeline.md § Usage`):
    ```bash
    bash emoji.sh                      # or: FORUM_URL=https://your.forum bash emoji.sh
    bash icon.sh

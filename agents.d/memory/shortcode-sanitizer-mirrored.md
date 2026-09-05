@@ -9,7 +9,7 @@ The Python generator names asset files with one sanitizer; the Swift runtime der
 names with another. They are two implementations of one rule with no shared source and no test
 across the boundary.
 
-**Why:** recorded in `agents.d/modules/ASSET_PIPELINE.md § Shortcode sanitization` ("Edit both or
+**Why:** recorded in `agents.d/modules/asset-pipeline.md § Shortcode sanitization` ("Edit both or
 neither"). `tests/test_shortcode.py` covers only the Python side.
 
 **How to apply:** any change to `sanitize_shortcode_to_asset` is a two-repo change — this repo

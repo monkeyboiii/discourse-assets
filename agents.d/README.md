@@ -3,7 +3,7 @@
 What an agent needs about discourse-assets, in one place:
 
 - `memory/` — facts true only for this repo; read `MEMORY.md` first, then only what applies.
-- `modules/` — the docs (`ASSET_PIPELINE.md`, the runbook that was the README).
+- `modules/` — the docs (`asset-pipeline.md`, the runbook that was the README).
 - `skills/` — `discourse-assets-regen`, the regeneration loop; linked into the harness by
   `dbx skills sync`, described by `dbx skills show discourse-assets-regen`.
 
