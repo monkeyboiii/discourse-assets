@@ -40,7 +40,7 @@ committed package Resources so Step 1 skips the full ~3,400-PNG download.
 - `src/emoji/` — emoji PNG download + Swift enum / lookup / item-table generators
 - `src/icon/` — SVG sprite dump + icon xcassets / enum generator
 - `src/shared/` — shared helpers (shortcode sanitization, Swift emit, JS parser, naming)
-- `assets/` — source data (`emojis.json`, `data.js`, `sprite-*.xml`)
+- `assets/` — source data (`emojis.json`, `data.js`, `sprite.xml`)
 
 ## Tests
 
